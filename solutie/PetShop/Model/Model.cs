@@ -1,6 +1,7 @@
 ﻿using Commons;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,11 +10,20 @@ namespace Model
 {
     public class Model : IModel
     {
-        public bool Add(Produs produs)
-        {
-            throw new NotImplementedException();
-        }
+        private List<Animal> _produse = new List<Animal>();
 
+        public void AddAnimal(Animal produs)
+        {
+            _produse.Add(produs);
+            var stream = new StreamWriter("animale.txt");
+            foreach (var item in _produse)
+            {
+                stream.WriteLine($"{item.Id},{item.Pret},{item.Categorie},{item.Varsta}");
+
+            }
+            stream.Close();
+
+        }
         public bool DataExits()
         {
             throw new NotImplementedException();

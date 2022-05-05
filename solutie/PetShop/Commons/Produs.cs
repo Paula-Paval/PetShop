@@ -10,6 +10,6 @@ namespace Commons
     {
         public int Id { get; set; }
         public double  Pret { get; set; }
-        public string  Denumire { get; set; }
+   
     }
 }

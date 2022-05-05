@@ -8,7 +8,7 @@ namespace Commons
 {
     public interface IModel
     {
-        bool Add(Produs produs);      
+        void AddAnimal(Animal produs);   
         bool DataExits();
         bool Delete(int  id);
         bool Exists(int  id);

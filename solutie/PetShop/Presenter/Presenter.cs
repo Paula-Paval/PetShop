@@ -9,9 +9,15 @@ namespace Presenter
 {
     public class Presenter : IPresenter
     {
-        public void AddProdus(Produs p)
+        private IModel _model;
+
+        public Presenter()
         {
-            throw new NotImplementedException();
+            _model = new Model.Model();
+        }
+        public void AddAnimal(Animal p)
+        {
+            _model.AddAnimal(p);
         }
 
         public void Exit()
@@ -19,7 +25,7 @@ namespace Presenter
             throw new NotImplementedException();
         }
 
-        public Produs GetCity(string denumire)
+        public Produs GetProdus(string denumire)
         {
             throw new NotImplementedException();
         }

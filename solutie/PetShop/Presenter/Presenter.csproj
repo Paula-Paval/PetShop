@@ -34,6 +34,9 @@
     <Reference Include="Commons">
       <HintPath>..\Commons\bin\Debug\Commons.dll</HintPath>
     </Reference>
+    <Reference Include="Model">
+      <HintPath>..\Model\bin\Debug\Model.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

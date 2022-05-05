@@ -8,10 +8,10 @@ namespace Commons
 {
     public interface IPresenter
     {
-        void AddProdus(Produs p);
+        void AddAnimal(Animal p);
         bool ProdusExists(string denumire);     
         void Exit();
-        Produs GetCity(string denumire);
+        Produs GetProdus(string denumire);
         void Init();
         void RemoveProdus(int id);
     }

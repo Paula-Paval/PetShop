@@ -11,5 +11,7 @@ namespace Commons
 
         void Display(string text, string color);
         void SetPresenter(IPresenter presenter);
+
+       
     }
 }

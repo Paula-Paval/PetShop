@@ -8,16 +8,16 @@ using static View.Meniu;
 
 namespace View
 {
-    public class View : IView
+    public class FormView : IView
     {
         private IPresenter _presenter;
         private IModel _model;
-        private List<MenuOption> _menuOptions1;
-        private List<MenuOption> _menuOptions2;
+        private List<MenuOption> _menuOptions;
+        //private List<MenuOption> _menuOptions2;
         private MenuState _menuState;
 
 
-        public View()
+        public FormView()
         {
 
         }
@@ -56,7 +56,12 @@ namespace View
 
         public void SetPresenter(IPresenter presenter)
         {
-            throw new NotImplementedException();
+            _presenter = presenter;
+        }
+
+        public void SetMenu(List<MenuOption> menuOptions)
+        {
+            _menuOptions = menuOptions;
         }
     }
 }

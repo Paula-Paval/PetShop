@@ -10,8 +10,7 @@ namespace Commons
     {
         public int Varsta { get; set; }
         public string  Categorie { get; set; }
-        public string  Rasa { get; set; }
-
+        
     }
 
 }
