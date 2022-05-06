@@ -9,6 +9,9 @@ namespace Commons
     public interface IPresenter
     {
         void AddAnimal(Animal p);
+        void AddObiecteIngrijire(ObiectIngrijire p);
+        void AddJucarii(Jucarie p);
+        void AddHrana(Hrana p);
         bool ProdusExists(string denumire);     
         void Exit();
         Produs GetProdus(string denumire);

@@ -20,6 +20,21 @@ namespace Presenter
             _model.AddAnimal(p);
         }
 
+        public void AddObiecteIngrijire(ObiectIngrijire p)
+        {
+            _model.AddObiecteIngrijire(p);
+        }
+
+        public void AddJucarii(Jucarie p)
+        {
+            _model.AddJucarii(p);
+        }
+
+        public void AddHrana(Hrana p)
+        {
+            _model.AddHrana(p);
+        }
+
         public void Exit()
         {
             throw new NotImplementedException();

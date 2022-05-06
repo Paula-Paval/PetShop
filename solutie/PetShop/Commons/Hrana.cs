@@ -9,6 +9,6 @@ namespace Commons
     public class Hrana:Produs
     {
         public string  Categorie { get; set; }
-        
+        public string Denumire { get; set; }
     }
 }

@@ -8,6 +8,6 @@ namespace Commons
 {
     public class Jucarie:Produs
     {
-       
+        public string Denumire { get; set; }
     }
 }

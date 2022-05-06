@@ -34,7 +34,23 @@ namespace PetShop
             pisica,           
 
         }
-  
+
+        public enum CategorieObiecte
+        {
+            perie,
+            cuscaTransport,
+            bol,
+
+        }
+
+        public enum CategorieHrana
+        {
+            hranaUmedaCaini,
+            hranaUscataCaini,
+            hranaUmedaPisici,
+            hranaUscataPisici,
+        }
+
 
         public FormPetShop()
         {
@@ -46,7 +62,10 @@ namespace PetShop
             comboBoxCategorii.SelectedItem = Categorii.animal;
             comboBoxSpecie.DataSource= Enum.GetValues(typeof(Specii));
             comboBoxSpecie.SelectedItem = Specii.caine;
-            
+            comboBoxCategorieIngrijire.DataSource = Enum.GetValues(typeof(CategorieObiecte));
+            comboBoxCategorieIngrijire.SelectedItem = CategorieObiecte.perie;
+            comboBoxCategorieHrana.DataSource = Enum.GetValues(typeof(CategorieHrana));
+            comboBoxCategorieHrana.SelectedItem = CategorieHrana.hranaUmedaCaini;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -158,9 +177,50 @@ namespace PetShop
                     Categorie = comboBoxSpecie.Text,
                 };
                 _presenter.AddAnimal(animal);
-                
+
+                MessageBox.Show("Produsul din categoria animale a fost adăugat cu succes!");
             }
-           
+
+            if (groupBoxObiectDeIngrijire.Enabled == true)
+            {
+                var obiectIngrijire = new ObiectIngrijire()
+                {
+                    Id = Convert.ToInt32(textBoxId.Text),
+                    Pret = Convert.ToDouble(textBoxPret.Text),
+                    Categorie = comboBoxCategorieIngrijire.Text,
+                    Denumire = textBoxDenumireObiect.Text,
+                };
+                _presenter.AddObiecteIngrijire(obiectIngrijire);
+
+                MessageBox.Show("Produsul din categoria obiecte de ingrijire a fost adăugat cu succes!");
+            }
+
+            if (groupBoxHrana.Enabled == true)
+            {
+                var hrana = new Hrana()
+                {
+                    Id = Convert.ToInt32(textBoxId.Text),
+                    Pret = Convert.ToDouble(textBoxPret.Text),
+                    Categorie = comboBoxCategorieHrana.Text,
+                    Denumire = textBoxDenumireHrana.Text,
+                };
+                _presenter.AddHrana(hrana);
+
+                MessageBox.Show("Produsul din categoria hrana a fost adăugat cu succes!");
+            }
+
+            if (groupBoxJucarii.Enabled == true)
+            {
+                var jucarie = new Jucarie()
+                {
+                    Id = Convert.ToInt32(textBoxId.Text),
+                    Pret = Convert.ToDouble(textBoxPret.Text),
+                    Denumire = textBoxDenumireJucarie.Text,
+                };
+                _presenter.AddJucarii(jucarie);
+
+                MessageBox.Show("Produsul din categoria jucarii a fost adăugat cu succes!");
+            }
         }
     }
 }

@@ -122,9 +122,9 @@ namespace PetShop
             // 
             // buttonAdauga
             // 
-            this.buttonAdauga.Location = new System.Drawing.Point(770, 167);
+            this.buttonAdauga.Location = new System.Drawing.Point(723, 167);
             this.buttonAdauga.Name = "buttonAdauga";
-            this.buttonAdauga.Size = new System.Drawing.Size(75, 23);
+            this.buttonAdauga.Size = new System.Drawing.Size(75, 34);
             this.buttonAdauga.TabIndex = 17;
             this.buttonAdauga.Text = "Adauga";
             this.buttonAdauga.UseVisualStyleBackColor = true;
@@ -134,9 +134,9 @@ namespace PetShop
             // 
             this.groupBoxJucarii.Controls.Add(this.labelDenumireJucarie);
             this.groupBoxJucarii.Controls.Add(this.textBoxDenumireJucarie);
-            this.groupBoxJucarii.Location = new System.Drawing.Point(619, 26);
+            this.groupBoxJucarii.Location = new System.Drawing.Point(660, 26);
             this.groupBoxJucarii.Name = "groupBoxJucarii";
-            this.groupBoxJucarii.Size = new System.Drawing.Size(136, 170);
+            this.groupBoxJucarii.Size = new System.Drawing.Size(186, 129);
             this.groupBoxJucarii.TabIndex = 16;
             this.groupBoxJucarii.TabStop = false;
             this.groupBoxJucarii.Text = "Jucarie";
@@ -144,7 +144,7 @@ namespace PetShop
             // labelDenumireJucarie
             // 
             this.labelDenumireJucarie.AutoSize = true;
-            this.labelDenumireJucarie.Location = new System.Drawing.Point(16, 72);
+            this.labelDenumireJucarie.Location = new System.Drawing.Point(24, 23);
             this.labelDenumireJucarie.Name = "labelDenumireJucarie";
             this.labelDenumireJucarie.Size = new System.Drawing.Size(69, 17);
             this.labelDenumireJucarie.TabIndex = 1;
@@ -152,9 +152,9 @@ namespace PetShop
             // 
             // textBoxDenumireJucarie
             // 
-            this.textBoxDenumireJucarie.Location = new System.Drawing.Point(6, 96);
+            this.textBoxDenumireJucarie.Location = new System.Drawing.Point(27, 50);
             this.textBoxDenumireJucarie.Name = "textBoxDenumireJucarie";
-            this.textBoxDenumireJucarie.Size = new System.Drawing.Size(100, 22);
+            this.textBoxDenumireJucarie.Size = new System.Drawing.Size(133, 22);
             this.textBoxDenumireJucarie.TabIndex = 0;
             // 
             // groupBoxHrana
@@ -165,7 +165,7 @@ namespace PetShop
             this.groupBoxHrana.Controls.Add(this.comboBoxCategorieHrana);
             this.groupBoxHrana.Location = new System.Drawing.Point(464, 26);
             this.groupBoxHrana.Name = "groupBoxHrana";
-            this.groupBoxHrana.Size = new System.Drawing.Size(133, 170);
+            this.groupBoxHrana.Size = new System.Drawing.Size(174, 170);
             this.groupBoxHrana.TabIndex = 15;
             this.groupBoxHrana.TabStop = false;
             this.groupBoxHrana.Text = "Hrana";
@@ -192,7 +192,7 @@ namespace PetShop
             // 
             this.textBoxDenumireHrana.Location = new System.Drawing.Point(6, 114);
             this.textBoxDenumireHrana.Name = "textBoxDenumireHrana";
-            this.textBoxDenumireHrana.Size = new System.Drawing.Size(100, 22);
+            this.textBoxDenumireHrana.Size = new System.Drawing.Size(158, 22);
             this.textBoxDenumireHrana.TabIndex = 1;
             // 
             // comboBoxCategorieHrana
@@ -200,7 +200,7 @@ namespace PetShop
             this.comboBoxCategorieHrana.FormattingEnabled = true;
             this.comboBoxCategorieHrana.Location = new System.Drawing.Point(6, 47);
             this.comboBoxCategorieHrana.Name = "comboBoxCategorieHrana";
-            this.comboBoxCategorieHrana.Size = new System.Drawing.Size(76, 24);
+            this.comboBoxCategorieHrana.Size = new System.Drawing.Size(158, 24);
             this.comboBoxCategorieHrana.TabIndex = 0;
             // 
             // groupBoxObiectDeIngrijire
@@ -239,16 +239,16 @@ namespace PetShop
             // 
             this.textBoxDenumireObiect.Location = new System.Drawing.Point(10, 119);
             this.textBoxDenumireObiect.Name = "textBoxDenumireObiect";
-            this.textBoxDenumireObiect.Size = new System.Drawing.Size(100, 22);
+            this.textBoxDenumireObiect.Size = new System.Drawing.Size(135, 22);
             this.textBoxDenumireObiect.TabIndex = 1;
             this.textBoxDenumireObiect.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // comboBoxCategorieIngrijire
             // 
             this.comboBoxCategorieIngrijire.FormattingEnabled = true;
-            this.comboBoxCategorieIngrijire.Location = new System.Drawing.Point(10, 52);
+            this.comboBoxCategorieIngrijire.Location = new System.Drawing.Point(6, 52);
             this.comboBoxCategorieIngrijire.Name = "comboBoxCategorieIngrijire";
-            this.comboBoxCategorieIngrijire.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxCategorieIngrijire.Size = new System.Drawing.Size(139, 24);
             this.comboBoxCategorieIngrijire.TabIndex = 0;
             // 
             // groupBoxAnimal
@@ -266,7 +266,7 @@ namespace PetShop
             // 
             // textBoxVarsta
             // 
-            this.textBoxVarsta.Location = new System.Drawing.Point(0, 40);
+            this.textBoxVarsta.Location = new System.Drawing.Point(6, 52);
             this.textBoxVarsta.Name = "textBoxVarsta";
             this.textBoxVarsta.Size = new System.Drawing.Size(124, 22);
             this.textBoxVarsta.TabIndex = 6;
@@ -274,7 +274,7 @@ namespace PetShop
             // labelVarstaAnimal
             // 
             this.labelVarstaAnimal.AutoSize = true;
-            this.labelVarstaAnimal.Location = new System.Drawing.Point(6, 20);
+            this.labelVarstaAnimal.Location = new System.Drawing.Point(6, 28);
             this.labelVarstaAnimal.Name = "labelVarstaAnimal";
             this.labelVarstaAnimal.Size = new System.Drawing.Size(95, 17);
             this.labelVarstaAnimal.TabIndex = 10;
@@ -283,7 +283,7 @@ namespace PetShop
             // labelCategorieAnimal
             // 
             this.labelCategorieAnimal.AutoSize = true;
-            this.labelCategorieAnimal.Location = new System.Drawing.Point(6, 65);
+            this.labelCategorieAnimal.Location = new System.Drawing.Point(16, 93);
             this.labelCategorieAnimal.Name = "labelCategorieAnimal";
             this.labelCategorieAnimal.Size = new System.Drawing.Size(69, 17);
             this.labelCategorieAnimal.TabIndex = 11;
@@ -292,7 +292,7 @@ namespace PetShop
             // comboBoxSpecie
             // 
             this.comboBoxSpecie.FormattingEnabled = true;
-            this.comboBoxSpecie.Location = new System.Drawing.Point(0, 93);
+            this.comboBoxSpecie.Location = new System.Drawing.Point(9, 117);
             this.comboBoxSpecie.Name = "comboBoxSpecie";
             this.comboBoxSpecie.Size = new System.Drawing.Size(124, 24);
             this.comboBoxSpecie.TabIndex = 8;
@@ -301,7 +301,7 @@ namespace PetShop
             // labelPret
             // 
             this.labelPret.AutoSize = true;
-            this.labelPret.Location = new System.Drawing.Point(13, 125);
+            this.labelPret.Location = new System.Drawing.Point(13, 138);
             this.labelPret.Name = "labelPret";
             this.labelPret.Size = new System.Drawing.Size(34, 17);
             this.labelPret.TabIndex = 5;
@@ -337,14 +337,14 @@ namespace PetShop
             // 
             // textBoxPret
             // 
-            this.textBoxPret.Location = new System.Drawing.Point(16, 145);
+            this.textBoxPret.Location = new System.Drawing.Point(16, 167);
             this.textBoxPret.Name = "textBoxPret";
             this.textBoxPret.Size = new System.Drawing.Size(100, 22);
             this.textBoxPret.TabIndex = 1;
             // 
             // textBoxId
             // 
-            this.textBoxId.Location = new System.Drawing.Point(16, 96);
+            this.textBoxId.Location = new System.Drawing.Point(16, 102);
             this.textBoxId.Name = "textBoxId";
             this.textBoxId.Size = new System.Drawing.Size(100, 22);
             this.textBoxId.TabIndex = 0;
@@ -373,9 +373,9 @@ namespace PetShop
             // 
             // buttonCumpara
             // 
-            this.buttonCumpara.Location = new System.Drawing.Point(268, 39);
+            this.buttonCumpara.Location = new System.Drawing.Point(265, 39);
             this.buttonCumpara.Name = "buttonCumpara";
-            this.buttonCumpara.Size = new System.Drawing.Size(75, 23);
+            this.buttonCumpara.Size = new System.Drawing.Size(75, 29);
             this.buttonCumpara.TabIndex = 1;
             this.buttonCumpara.Text = "Cumpara";
             this.buttonCumpara.UseVisualStyleBackColor = true;
@@ -410,9 +410,9 @@ namespace PetShop
             // 
             // buttonStegere
             // 
-            this.buttonStegere.Location = new System.Drawing.Point(554, 20);
+            this.buttonStegere.Location = new System.Drawing.Point(553, 11);
             this.buttonStegere.Name = "buttonStegere";
-            this.buttonStegere.Size = new System.Drawing.Size(75, 23);
+            this.buttonStegere.Size = new System.Drawing.Size(75, 31);
             this.buttonStegere.TabIndex = 2;
             this.buttonStegere.Text = "Stergere";
             this.buttonStegere.UseVisualStyleBackColor = true;
@@ -420,7 +420,7 @@ namespace PetShop
             // labelIdDeSters
             // 
             this.labelIdDeSters.AutoSize = true;
-            this.labelIdDeSters.Location = new System.Drawing.Point(126, 23);
+            this.labelIdDeSters.Location = new System.Drawing.Point(129, 18);
             this.labelIdDeSters.Name = "labelIdDeSters";
             this.labelIdDeSters.Size = new System.Drawing.Size(19, 17);
             this.labelIdDeSters.TabIndex = 1;
@@ -428,7 +428,7 @@ namespace PetShop
             // 
             // textBoxIdDeSters
             // 
-            this.textBoxIdDeSters.Location = new System.Drawing.Point(151, 20);
+            this.textBoxIdDeSters.Location = new System.Drawing.Point(165, 15);
             this.textBoxIdDeSters.Name = "textBoxIdDeSters";
             this.textBoxIdDeSters.Size = new System.Drawing.Size(162, 22);
             this.textBoxIdDeSters.TabIndex = 0;
