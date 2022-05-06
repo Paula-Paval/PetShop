@@ -48,8 +48,7 @@ namespace View
             options.Add(new MenuOption("3", "Afisare tuturor obiectlor de ingrijire ", UserChoice.ListObiecteDeIngrijire));
             options.Add(new MenuOption("4", "Afisare hranei ", UserChoice.ListHrana));
             options.Add(new MenuOption("5", "Cumparare", UserChoice.Cumparare));
-            options.Add(new MenuOption("6", "Intoarcere la meniul principal", UserChoice.PreviousMenu));
-            options.Add(new MenuOption("7", "Iesire", UserChoice.Exit));
+      
         }
     }
 }

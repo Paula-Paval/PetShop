@@ -55,9 +55,24 @@ namespace Presenter
             throw new NotImplementedException();
         }
 
-        public void RemoveProdus(int id)
+        public bool RemoveProdus(int id, int tip)
         {
-            throw new NotImplementedException();
+           switch(tip)
+            {
+                case 0:
+                   return _model.DeleteAnimal(id);
+                    
+                case 2:
+                    return _model.DeleteObiectIngrijire(id);
+                   
+                case 3:
+                    return _model.DeleteHrana(id);
+                   
+                case 4:
+                    return _model.DeleteJucarii(id);
+                default:return false;
+                    
+            }
         }
     }
 }

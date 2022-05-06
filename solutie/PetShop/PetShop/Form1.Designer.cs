@@ -66,6 +66,8 @@ namespace PetShop
             this.buttonStegere = new System.Windows.Forms.Button();
             this.labelIdDeSters = new System.Windows.Forms.Label();
             this.textBoxIdDeSters = new System.Windows.Forms.TextBox();
+            this.comboBoxTipStergere = new System.Windows.Forms.ComboBox();
+            this.labelTipStergere = new System.Windows.Forms.Label();
             this.groupBoxAdaugare.SuspendLayout();
             this.groupBoxJucarii.SuspendLayout();
             this.groupBoxHrana.SuspendLayout();
@@ -398,6 +400,8 @@ namespace PetShop
             // 
             // groupBoxStergere
             // 
+            this.groupBoxStergere.Controls.Add(this.labelTipStergere);
+            this.groupBoxStergere.Controls.Add(this.comboBoxTipStergere);
             this.groupBoxStergere.Controls.Add(this.buttonStegere);
             this.groupBoxStergere.Controls.Add(this.labelIdDeSters);
             this.groupBoxStergere.Controls.Add(this.textBoxIdDeSters);
@@ -416,11 +420,12 @@ namespace PetShop
             this.buttonStegere.TabIndex = 2;
             this.buttonStegere.Text = "Stergere";
             this.buttonStegere.UseVisualStyleBackColor = true;
+            this.buttonStegere.Click += new System.EventHandler(this.buttonStegere_Click);
             // 
             // labelIdDeSters
             // 
             this.labelIdDeSters.AutoSize = true;
-            this.labelIdDeSters.Location = new System.Drawing.Point(129, 18);
+            this.labelIdDeSters.Location = new System.Drawing.Point(317, 21);
             this.labelIdDeSters.Name = "labelIdDeSters";
             this.labelIdDeSters.Size = new System.Drawing.Size(19, 17);
             this.labelIdDeSters.TabIndex = 1;
@@ -428,10 +433,27 @@ namespace PetShop
             // 
             // textBoxIdDeSters
             // 
-            this.textBoxIdDeSters.Location = new System.Drawing.Point(165, 15);
+            this.textBoxIdDeSters.Location = new System.Drawing.Point(354, 18);
             this.textBoxIdDeSters.Name = "textBoxIdDeSters";
             this.textBoxIdDeSters.Size = new System.Drawing.Size(162, 22);
             this.textBoxIdDeSters.TabIndex = 0;
+            // 
+            // comboBoxTipStergere
+            // 
+            this.comboBoxTipStergere.FormattingEnabled = true;
+            this.comboBoxTipStergere.Location = new System.Drawing.Point(121, 18);
+            this.comboBoxTipStergere.Name = "comboBoxTipStergere";
+            this.comboBoxTipStergere.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxTipStergere.TabIndex = 3;
+            // 
+            // labelTipStergere
+            // 
+            this.labelTipStergere.AutoSize = true;
+            this.labelTipStergere.Location = new System.Drawing.Point(59, 23);
+            this.labelTipStergere.Name = "labelTipStergere";
+            this.labelTipStergere.Size = new System.Drawing.Size(28, 17);
+            this.labelTipStergere.TabIndex = 4;
+            this.labelTipStergere.Text = "Tip";
             // 
             // FormPetShop
             // 
@@ -503,6 +525,8 @@ namespace PetShop
         private System.Windows.Forms.Button buttonStegere;
         private System.Windows.Forms.Label labelIdDeSters;
         private System.Windows.Forms.TextBox textBoxIdDeSters;
+        private System.Windows.Forms.Label labelTipStergere;
+        private System.Windows.Forms.ComboBox comboBoxTipStergere;
     }
 }
 

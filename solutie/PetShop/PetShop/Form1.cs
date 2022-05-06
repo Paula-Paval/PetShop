@@ -52,6 +52,7 @@ namespace PetShop
         }
 
 
+
         public FormPetShop()
         {
             InitializeComponent();
@@ -66,6 +67,8 @@ namespace PetShop
             comboBoxCategorieIngrijire.SelectedItem = CategorieObiecte.perie;
             comboBoxCategorieHrana.DataSource = Enum.GetValues(typeof(CategorieHrana));
             comboBoxCategorieHrana.SelectedItem = CategorieHrana.hranaUmedaCaini;
+            comboBoxTipStergere.DataSource = Enum.GetValues(typeof(Categorii));
+            comboBoxTipStergere.SelectedItem = Categorii.animal;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -221,6 +224,56 @@ namespace PetShop
 
                 MessageBox.Show("Produsul din categoria jucarii a fost adăugat cu succes!");
             }
+        }
+
+        private void buttonStegere_Click(object sender, EventArgs e)
+        {
+            var id = Convert.ToInt32(textBoxIdDeSters.Text);
+            switch (comboBoxTipStergere.SelectedItem)
+            {
+                case Categorii.animal:
+                    if(!_presenter.RemoveProdus(id, 0))
+                    {
+                        MessageBox.Show("Nu exista un astfel de animal");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Stergere realizata cu succes!");
+                    }
+                    
+                    break;
+                case Categorii.obiect:
+                    if (!_presenter.RemoveProdus(id, 1))
+                    {
+                        MessageBox.Show("Nu exista un astfel de obiect de ingrijire");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Stergere realizata cu succes!");
+                    }
+                    break;
+                case Categorii.hrana:
+                    if (!_presenter.RemoveProdus(id, 2))
+                    {
+                        MessageBox.Show("Nu exista un astfel de hrana");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Stergere realizata cu succes!");
+                    }
+                    break;
+                case Categorii.jucarie:
+                    if (!_presenter.RemoveProdus(id, 3))
+                    {
+                        MessageBox.Show("Nu exista un astfel de jucarie");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Stergere realizata cu succes!");
+                    }
+                    break;
+            }
+           
         }
     }
 }

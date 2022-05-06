@@ -16,6 +16,7 @@ namespace Commons
         void Exit();
         Produs GetProdus(string denumire);
         void Init();
-        void RemoveProdus(int id);
-    }
+        bool RemoveProdus(int id, int tip);
+
+      }
 }
