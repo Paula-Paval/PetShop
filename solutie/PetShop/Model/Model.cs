@@ -24,14 +24,14 @@ namespace Model
         public void AddObiecteIngrijire(ObiectIngrijire produs)
         {
             _obiecteIngrijire.Add(produs);
-            ScriereInFisierObiecteIngrijire();         
+            ScriereInFisierObiecteIngrijire();
 
         }
 
         public void AddJucarii(Jucarie produs)
         {
             _jucarii.Add(produs);
-            ScriereInFisierJucarii();      
+            ScriereInFisierJucarii();
 
         }
 
@@ -41,21 +41,7 @@ namespace Model
             ScriereInFisierHrana();
         }
 
-        public bool DataExits()
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Delete(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Exists(int id)
-        {
-            throw new NotImplementedException();
-        }
-
+      
         public void InitializeData()
         {
             throw new NotImplementedException();
@@ -63,17 +49,25 @@ namespace Model
 
         public string ListAll(string tip)
         {
-            throw new NotImplementedException();
+            switch (tip)
+            {
+                case Constante.Animal:
+                    return ConvertListOfAnimalsToString();
+                case Constante.ObiectDeIngrijire:
+                    return ConvertListOfObiecteToString();
+                case Constante.Hrana:
+                    return ConvertListOfHranaToString();
+                case Constante.Jucarie:
+                    return ConvertListOfJucariiToString();
+                default:
+                    return "";
+            }
         }
 
-        public bool SaveData()
-        {
-            throw new NotImplementedException();
-        }
-
+      
         public bool DeleteAnimal(int id)
         {
-            var animal = _animale.FirstOrDefault(x=>x.Id==id);
+            var animal = _animale.FirstOrDefault(x => x.Id == id);
 
             if (animal == null)
                 return false;
@@ -124,7 +118,50 @@ namespace Model
 
             ScriereInFisierHrana();
 
-            return true;    
+            return true;
+        }
+
+        public void Cumpara(string tip, string denumire)
+        {
+            switch (tip)
+            {
+                case Constante.Animal:
+                    var idAnimal = _animale.FirstOrDefault(x => x.Categorie == denumire).Id;
+                    DeleteAnimal(idAnimal);
+                    break;
+                case Constante.ObiectDeIngrijire:
+                    var idObiect = _obiecteIngrijire.FirstOrDefault(x => x.Denumire == denumire).Id;
+                    DeleteObiectIngrijire(idObiect);
+                    break;
+                case Constante.Hrana:
+                    var idHrana = _hrana.FirstOrDefault(x => x.Denumire == denumire).Id;
+                    DeleteHrana(idHrana);
+                    break;
+                case Constante.Jucarie:
+                    var idJucarie = _jucarii.FirstOrDefault(x => x.Denumire == denumire).Id;
+                    DeleteJucarii(idJucarie);
+                    break;              
+            }
+        }
+        public bool Exists(string tip, string denumire)
+        {
+            switch (tip)
+            {
+                case Constante.Animal:
+                    var animal = _animale.FirstOrDefault(x => x.Categorie == denumire);
+                    return animal != null;                 
+                case Constante.ObiectDeIngrijire:
+                    var obiect = _obiecteIngrijire.FirstOrDefault(x => x.Denumire == denumire);
+                    return obiect != null;
+                case Constante.Hrana:
+                    var hrana = _hrana.FirstOrDefault(x => x.Denumire == denumire);
+                    return hrana != null;
+                case Constante.Jucarie:
+                    var jucarie = _jucarii.FirstOrDefault(x => x.Denumire == denumire);
+                    return jucarie != null;
+                default:
+                    return false;
+            }
         }
 
         #region [private methods]
@@ -170,6 +207,48 @@ namespace Model
             }
             stream.Close();
         }
+
+        private string ConvertListOfAnimalsToString()
+        {
+            var result = "";
+            foreach (var item in _animale)
+            {
+                result += $"{item.Id},{item.Pret},{item.Categorie},{item.Varsta}\n";
+            }
+            return result;
+        }
+
+        private string ConvertListOfObiecteToString()
+        {
+            var result = "";
+            foreach (var item in _obiecteIngrijire)
+            {
+                result += $"{ item.Id},{ item.Pret},{ item.Categorie},{ item.Denumire}\n";
+            }
+            return result;
+        }
+        private string ConvertListOfHranaToString()
+        {
+            var result = "";
+            foreach (var item in _hrana)
+            {
+                result += $"{item.Id},{item.Pret},{item.Categorie},{item.Denumire}\n";
+            }
+            return result;
+        }
+
+        private string ConvertListOfJucariiToString()
+        {
+            var result = "";
+            foreach (var item in _hrana)
+            {
+                result += $"{item.Id},{item.Pret},{item.Denumire}\n";
+            }
+            return result;
+        }
+
+       
+
         #endregion
     }
 }

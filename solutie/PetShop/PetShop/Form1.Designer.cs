@@ -63,11 +63,13 @@ namespace PetShop
             this.textBoxCumparare = new System.Windows.Forms.TextBox();
             this.richTextBoxAfisare = new System.Windows.Forms.RichTextBox();
             this.groupBoxStergere = new System.Windows.Forms.GroupBox();
+            this.labelTipStergere = new System.Windows.Forms.Label();
+            this.comboBoxTipStergere = new System.Windows.Forms.ComboBox();
             this.buttonStegere = new System.Windows.Forms.Button();
             this.labelIdDeSters = new System.Windows.Forms.Label();
             this.textBoxIdDeSters = new System.Windows.Forms.TextBox();
-            this.comboBoxTipStergere = new System.Windows.Forms.ComboBox();
-            this.labelTipStergere = new System.Windows.Forms.Label();
+            this.comboBoxTipCumparare = new System.Windows.Forms.ComboBox();
+            this.labelTipCumparare = new System.Windows.Forms.Label();
             this.groupBoxAdaugare.SuspendLayout();
             this.groupBoxJucarii.SuspendLayout();
             this.groupBoxHrana.SuspendLayout();
@@ -364,6 +366,8 @@ namespace PetShop
             // 
             // groupBoxUser
             // 
+            this.groupBoxUser.Controls.Add(this.labelTipCumparare);
+            this.groupBoxUser.Controls.Add(this.comboBoxTipCumparare);
             this.groupBoxUser.Controls.Add(this.buttonCumpara);
             this.groupBoxUser.Controls.Add(this.textBoxCumparare);
             this.groupBoxUser.Location = new System.Drawing.Point(21, 182);
@@ -375,16 +379,17 @@ namespace PetShop
             // 
             // buttonCumpara
             // 
-            this.buttonCumpara.Location = new System.Drawing.Point(265, 39);
+            this.buttonCumpara.Location = new System.Drawing.Point(267, 57);
             this.buttonCumpara.Name = "buttonCumpara";
             this.buttonCumpara.Size = new System.Drawing.Size(75, 29);
             this.buttonCumpara.TabIndex = 1;
             this.buttonCumpara.Text = "Cumpara";
             this.buttonCumpara.UseVisualStyleBackColor = true;
+            this.buttonCumpara.Click += new System.EventHandler(this.buttonCumpara_Click);
             // 
             // textBoxCumparare
             // 
-            this.textBoxCumparare.Location = new System.Drawing.Point(6, 39);
+            this.textBoxCumparare.Location = new System.Drawing.Point(19, 57);
             this.textBoxCumparare.Multiline = true;
             this.textBoxCumparare.Name = "textBoxCumparare";
             this.textBoxCumparare.Size = new System.Drawing.Size(216, 27);
@@ -412,6 +417,23 @@ namespace PetShop
             this.groupBoxStergere.TabStop = false;
             this.groupBoxStergere.Text = "Stergere";
             // 
+            // labelTipStergere
+            // 
+            this.labelTipStergere.AutoSize = true;
+            this.labelTipStergere.Location = new System.Drawing.Point(59, 23);
+            this.labelTipStergere.Name = "labelTipStergere";
+            this.labelTipStergere.Size = new System.Drawing.Size(28, 17);
+            this.labelTipStergere.TabIndex = 4;
+            this.labelTipStergere.Text = "Tip";
+            // 
+            // comboBoxTipStergere
+            // 
+            this.comboBoxTipStergere.FormattingEnabled = true;
+            this.comboBoxTipStergere.Location = new System.Drawing.Point(121, 18);
+            this.comboBoxTipStergere.Name = "comboBoxTipStergere";
+            this.comboBoxTipStergere.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxTipStergere.TabIndex = 3;
+            // 
             // buttonStegere
             // 
             this.buttonStegere.Location = new System.Drawing.Point(553, 11);
@@ -438,22 +460,22 @@ namespace PetShop
             this.textBoxIdDeSters.Size = new System.Drawing.Size(162, 22);
             this.textBoxIdDeSters.TabIndex = 0;
             // 
-            // comboBoxTipStergere
+            // comboBoxTipCumparare
             // 
-            this.comboBoxTipStergere.FormattingEnabled = true;
-            this.comboBoxTipStergere.Location = new System.Drawing.Point(121, 18);
-            this.comboBoxTipStergere.Name = "comboBoxTipStergere";
-            this.comboBoxTipStergere.Size = new System.Drawing.Size(121, 24);
-            this.comboBoxTipStergere.TabIndex = 3;
+            this.comboBoxTipCumparare.FormattingEnabled = true;
+            this.comboBoxTipCumparare.Location = new System.Drawing.Point(50, 27);
+            this.comboBoxTipCumparare.Name = "comboBoxTipCumparare";
+            this.comboBoxTipCumparare.Size = new System.Drawing.Size(94, 24);
+            this.comboBoxTipCumparare.TabIndex = 2;
             // 
-            // labelTipStergere
+            // labelTipCumparare
             // 
-            this.labelTipStergere.AutoSize = true;
-            this.labelTipStergere.Location = new System.Drawing.Point(59, 23);
-            this.labelTipStergere.Name = "labelTipStergere";
-            this.labelTipStergere.Size = new System.Drawing.Size(28, 17);
-            this.labelTipStergere.TabIndex = 4;
-            this.labelTipStergere.Text = "Tip";
+            this.labelTipCumparare.AutoSize = true;
+            this.labelTipCumparare.Location = new System.Drawing.Point(16, 27);
+            this.labelTipCumparare.Name = "labelTipCumparare";
+            this.labelTipCumparare.Size = new System.Drawing.Size(28, 17);
+            this.labelTipCumparare.TabIndex = 5;
+            this.labelTipCumparare.Text = "Tip";
             // 
             // FormPetShop
             // 
@@ -527,6 +549,8 @@ namespace PetShop
         private System.Windows.Forms.TextBox textBoxIdDeSters;
         private System.Windows.Forms.Label labelTipStergere;
         private System.Windows.Forms.ComboBox comboBoxTipStergere;
+        private System.Windows.Forms.Label labelTipCumparare;
+        private System.Windows.Forms.ComboBox comboBoxTipCumparare;
     }
 }
 

@@ -16,16 +16,14 @@ namespace Commons
         bool  DeleteAnimal(int id);
         bool DeleteObiectIngrijire(int id);
         bool DeleteJucarii(int id);
-
         bool DeleteHrana(int id);
 
-
-        bool DataExits();
-        bool Delete(int  id);
-        bool Exists(int  id);
-        void InitializeData();
         string ListAll(string tip);
-        bool SaveData();
+        void  Cumpara(string tip, string denumire);
+     
+        bool Exists(string  tip, string denumire);
+        void InitializeData();     
+       
       
     }
 }

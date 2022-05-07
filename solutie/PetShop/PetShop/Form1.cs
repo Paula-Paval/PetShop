@@ -69,6 +69,8 @@ namespace PetShop
             comboBoxCategorieHrana.SelectedItem = CategorieHrana.hranaUmedaCaini;
             comboBoxTipStergere.DataSource = Enum.GetValues(typeof(Categorii));
             comboBoxTipStergere.SelectedItem = Categorii.animal;
+            comboBoxTipCumparare.DataSource = Enum.GetValues(typeof(Categorii));
+            comboBoxTipCumparare.SelectedItem = Categorii.animal;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -130,6 +132,22 @@ namespace PetShop
                     groupBoxUser.Enabled = false;                   
                     groupBoxAdaugare.Enabled = false;
                     break;
+                case "Afisare tuturor animalelor":
+                    richTextBoxAfisare.Text = _presenter.List(Constante.Animal);
+                    break;
+                case "Afisare tuturor jucariilor":
+                    richTextBoxAfisare.Text = _presenter.List(Constante.Jucarie);
+                    break;
+                case "Afisare tuturor obiectlor de ingrijire":
+                    richTextBoxAfisare.Text = _presenter.List(Constante.ObiectDeIngrijire);
+                    break;
+                case "Afisare hranei":
+                    richTextBoxAfisare.Text = _presenter.List(Constante.Hrana);
+                    break;
+                case "Cumparare":
+                    groupBoxUser.Enabled = true;
+                    break;
+
             }
         }
 
@@ -232,7 +250,7 @@ namespace PetShop
             switch (comboBoxTipStergere.SelectedItem)
             {
                 case Categorii.animal:
-                    if(!_presenter.RemoveProdus(id, 0))
+                    if(!_presenter.RemoveProdus(id, Constante.Animal))
                     {
                         MessageBox.Show("Nu exista un astfel de animal");
                     }
@@ -243,7 +261,7 @@ namespace PetShop
                     
                     break;
                 case Categorii.obiect:
-                    if (!_presenter.RemoveProdus(id, 1))
+                    if (!_presenter.RemoveProdus(id, Constante.ObiectDeIngrijire))
                     {
                         MessageBox.Show("Nu exista un astfel de obiect de ingrijire");
                     }
@@ -253,7 +271,7 @@ namespace PetShop
                     }
                     break;
                 case Categorii.hrana:
-                    if (!_presenter.RemoveProdus(id, 2))
+                    if (!_presenter.RemoveProdus(id, Constante.Hrana))
                     {
                         MessageBox.Show("Nu exista un astfel de hrana");
                     }
@@ -263,7 +281,7 @@ namespace PetShop
                     }
                     break;
                 case Categorii.jucarie:
-                    if (!_presenter.RemoveProdus(id, 3))
+                    if (!_presenter.RemoveProdus(id, Constante.Jucarie))
                     {
                         MessageBox.Show("Nu exista un astfel de jucarie");
                     }
@@ -274,6 +292,55 @@ namespace PetShop
                     break;
             }
            
+        }
+
+        private void buttonCumpara_Click(object sender, EventArgs e)
+        {
+            var denumire = textBoxCumparare.Text;
+            switch (comboBoxTipStergere.SelectedItem)
+            {
+                case Categorii.animal:
+                    if (!_presenter.Cumpara(Constante.Animal,denumire))
+                    {
+                        MessageBox.Show("Nu exista un astfel de animal");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cumparare  realizata cu succes!");
+                    }
+
+                    break;
+                case Categorii.obiect:
+                    if (!_presenter.Cumpara(Constante.ObiectDeIngrijire, denumire))
+                    {
+                        MessageBox.Show("Nu exista un astfel de obiect de ingrijire");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cumparare realizata cu succes!");
+                    }
+                    break;
+                case Categorii.hrana:
+                    if (!_presenter.Cumpara(Constante.Hrana, denumire))
+                    {
+                        MessageBox.Show("Nu exista un astfel de hrana");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cumparare realizata cu succes!");
+                    }
+                    break;
+                case Categorii.jucarie:
+                    if (!_presenter.Cumpara(Constante.Jucarie, denumire))
+                    {
+                        MessageBox.Show("Nu exista un astfel de jucarie");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cumparare realizata cu succes!");
+                    }
+                    break;
+            }
         }
     }
 }

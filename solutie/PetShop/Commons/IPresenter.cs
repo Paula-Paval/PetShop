@@ -12,11 +12,9 @@ namespace Commons
         void AddObiecteIngrijire(ObiectIngrijire p);
         void AddJucarii(Jucarie p);
         void AddHrana(Hrana p);
-        bool ProdusExists(string denumire);     
-        void Exit();
-        Produs GetProdus(string denumire);
-        void Init();
-        bool RemoveProdus(int id, int tip);
-
-      }
+        bool RemoveProdus(int id, string tip);
+        bool Cumpara(string tip, string denumire);
+        string List(string tip);
+        void Init();  
+    }
 }

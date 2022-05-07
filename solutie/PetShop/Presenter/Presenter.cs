@@ -35,44 +35,51 @@ namespace Presenter
             _model.AddHrana(p);
         }
 
-        public void Exit()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Produs GetProdus(string denumire)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Init()
         {
             throw new NotImplementedException();
         }
 
-        public bool ProdusExists(string denumire)
+        public bool ProdusExists(string tip, string denumire)
         {
-            throw new NotImplementedException();
+           return  _model.Exists(tip, denumire);
         }
 
-        public bool RemoveProdus(int id, int tip)
+        public bool RemoveProdus(int id, string tip)
         {
            switch(tip)
             {
-                case 0:
+                case Constante.Animal:
                    return _model.DeleteAnimal(id);
                     
-                case 2:
+                case Constante.ObiectDeIngrijire:
                     return _model.DeleteObiectIngrijire(id);
                    
-                case 3:
+                case Constante.Hrana:
                     return _model.DeleteHrana(id);
                    
-                case 4:
+                case Constante.Jucarie:
                     return _model.DeleteJucarii(id);
                 default:return false;
                     
             }
         }
+
+        public string List(string  tip)
+        {
+            return _model.ListAll(tip);
+        }
+
+        public bool Cumpara(string tip, string denumire)
+        {
+            if (!ProdusExists(tip, denumire))
+                return false;
+
+            _model.Cumpara(tip, denumire);
+
+            return true;
+        }
+
+     
     }
 }
