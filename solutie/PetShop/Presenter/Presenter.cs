@@ -37,7 +37,7 @@ namespace Presenter
 
         public void Init()
         {
-            throw new NotImplementedException();
+            _model.InitializeData();
         }
 
         public bool ProdusExists(string tip, string denumire)

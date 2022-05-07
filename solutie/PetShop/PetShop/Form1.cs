@@ -71,6 +71,7 @@ namespace PetShop
             comboBoxTipStergere.SelectedItem = Categorii.animal;
             comboBoxTipCumparare.DataSource = Enum.GetValues(typeof(Categorii));
             comboBoxTipCumparare.SelectedItem = Categorii.animal;
+            _presenter.Init();
         }
 
         private void label1_Click(object sender, EventArgs e)

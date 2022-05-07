@@ -25,7 +25,6 @@ namespace Model
         {
             _obiecteIngrijire.Add(produs);
             ScriereInFisierObiecteIngrijire();
-
         }
 
         public void AddJucarii(Jucarie produs)
@@ -44,7 +43,11 @@ namespace Model
       
         public void InitializeData()
         {
-            throw new NotImplementedException();
+            _animale = CitireDinFisierAnimale();
+            _obiecteIngrijire = CitireDinFisierObiectDeIngrijire();
+            _hrana = CitireDinFisierHrana();
+            _jucarii = CitireDinFisierJucarii();
+           
         }
 
         public string ListAll(string tip)
@@ -167,7 +170,7 @@ namespace Model
         #region [private methods]
         private void ScriereInFisierAnimale()
         {
-            var stream = new StreamWriter("animale.txt");
+            var stream = new StreamWriter(Constante.FisierAnimale);
             foreach (var item in _animale)
             {
                 stream.WriteLine($"{item.Id},{item.Pret},{item.Categorie},{item.Varsta}");
@@ -177,7 +180,7 @@ namespace Model
         }
         private void ScriereInFisierObiecteIngrijire()
         {
-            var stream = new StreamWriter("obiecteIngrijire.txt");
+            var stream = new StreamWriter(Constante.FisierObiecteDeIngrijire);
             foreach (var item in _obiecteIngrijire)
             {
                 stream.WriteLine($"{item.Id},{item.Pret},{item.Categorie},{item.Denumire}");
@@ -188,7 +191,7 @@ namespace Model
         }
         private void ScriereInFisierJucarii()
         {
-            var stream = new StreamWriter("jucarii.txt");
+            var stream = new StreamWriter(Constante.FisierJucarii);
             foreach (var item in _jucarii)
             {
                 stream.WriteLine($"{item.Id},{item.Pret},{item.Denumire}");
@@ -199,7 +202,7 @@ namespace Model
 
         private void ScriereInFisierHrana()
         {
-            var stream = new StreamWriter("hrana.txt");
+            var stream = new StreamWriter(Constante.FisierHrana);
             foreach (var item in _hrana)
             {
                 stream.WriteLine($"{item.Id},{item.Pret},{item.Categorie},{item.Denumire}");
@@ -247,7 +250,95 @@ namespace Model
             return result;
         }
 
-       
+        public List<ObiectIngrijire> CitireDinFisierObiectDeIngrijire()
+        {
+            var result = new List<ObiectIngrijire>();
+            IEnumerable<string> lines = File.ReadLines(Constante.FisierObiecteDeIngrijire);
+
+            foreach (var item in lines.ToList())
+            {
+                var values = item.Split(',');
+                var obiect = new ObiectIngrijire()
+                {
+                    Id = Convert.ToInt32(values[0]),
+                    Pret = Convert.ToDouble(values[1]),
+                    Categorie = values[2],
+                    Denumire=values[3]
+                  
+                };
+                result.Add(obiect);
+
+            }
+
+            return result;
+        }
+
+        public List<Animal> CitireDinFisierAnimale()
+        {
+            var result = new List<Animal>();
+            IEnumerable<string> lines = File.ReadLines(Constante.FisierAnimale);
+
+            foreach (var item in lines.ToList())
+            {
+                var values = item.Split(',');
+                var animal = new Animal()
+                {
+                    Id = Convert.ToInt32(values[0]),
+                    Pret = Convert.ToDouble(values[1]),
+                    Categorie = values[2],
+                    Varsta = Convert.ToInt32(values[3])
+                };
+                result.Add(animal);
+
+            }
+
+            return result;
+        }
+
+        public List<Hrana> CitireDinFisierHrana()
+        {
+            var result = new List<Hrana>();
+            IEnumerable<string> lines = File.ReadLines(Constante.FisierHrana);
+
+            foreach (var item in lines.ToList())
+            {
+                var values = item.Split(',');
+                var hrana = new Hrana()
+                {
+                    Id = Convert.ToInt32(values[0]),
+                    Pret = Convert.ToDouble(values[1]),
+                    Categorie = values[2],
+                    Denumire=values[3]
+                };
+                result.Add(hrana);
+
+            }
+
+            return result;
+        }
+
+        public List<Jucarie> CitireDinFisierJucarii()
+        {
+            var result = new List<Jucarie>();
+            IEnumerable<string> lines = File.ReadLines(Constante.FisierJucarii);
+
+            foreach (var item in lines.ToList())
+            {
+                var values = item.Split(',');
+                var jucarie = new Jucarie()
+                {
+                    Id = Convert.ToInt32(values[0]),
+                    Pret = Convert.ToDouble(values[1]),
+                    Denumire = values[2]
+                };
+                result.Add(jucarie);
+
+            }
+
+            return result;
+        }
+
+
 
         #endregion
     }
