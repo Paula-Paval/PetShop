@@ -16,7 +16,9 @@ namespace PetShop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormPetShop());
+            var form = new FormPetShop();
+            form.SetPresenter(new Presenter.Presenter());
+            Application.Run(form);
         }
     }
 }

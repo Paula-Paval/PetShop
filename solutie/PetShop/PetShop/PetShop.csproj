@@ -37,9 +37,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Commons\bin\Debug\Commons.dll</HintPath>
     </Reference>
-    <Reference Include="Model">
-      <HintPath>..\Model\bin\Debug\Model.dll</HintPath>
-    </Reference>
     <Reference Include="Presenter">
       <HintPath>..\Presenter\bin\Debug\Presenter.dll</HintPath>
     </Reference>

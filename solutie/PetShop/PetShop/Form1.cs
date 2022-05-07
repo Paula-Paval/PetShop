@@ -16,7 +16,7 @@ namespace PetShop
 {
     public partial class FormPetShop : Form, IView
     {
-        private IPresenter _presenter= new Presenter.Presenter();
+        private IPresenter _presenter;
 
         private List<MenuOption> _menuOptions;     
 
@@ -71,11 +71,12 @@ namespace PetShop
             comboBoxTipStergere.SelectedItem = Categorii.animal;
             comboBoxTipCumparare.DataSource = Enum.GetValues(typeof(Categorii));
             comboBoxTipCumparare.SelectedItem = Categorii.animal;
-            _presenter.Init();
+           
         }
         public void SetPresenter(IPresenter presenter)
         {
             _presenter = presenter;
+            _presenter.Init();
         }
         private void label1_Click(object sender, EventArgs e)
         {
