@@ -13,9 +13,7 @@ namespace View
 
         public struct MenuOption
         {
-            // structura pentru construirea dinamica a unui meniu
-            // reprezinta o optiune intr-un meniu
-
+           
             public readonly string Number;
             public readonly string Text;
             public readonly UserChoice Choice;
@@ -26,9 +24,7 @@ namespace View
                 Text = text;
                 Choice = choice;
             }
-        }
-
-        
+        }       
     
 
         public static void AdminMenu(out List<MenuOption> options)

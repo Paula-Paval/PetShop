@@ -8,10 +8,7 @@ namespace Commons
 {
     public  interface IView
     {
-
-        void Display(string text, string color);
-        void SetPresenter(IPresenter presenter);
-
-       
+       void SetPresenter(IPresenter presenter); 
+        
     }
 }

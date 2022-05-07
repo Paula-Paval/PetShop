@@ -12,8 +12,9 @@ namespace Commons
         public  const string ObiectDeIngrijire = "obiectdeIngrijire";
         public  const string Hrana = "hrana";
         public  const string Jucarie = "jucarie";
-
-
-
+        public const string FisierAnimale = "animale.txt";
+        public const string FisierObiecteDeIngrijire = "obiecteIngrijire.txt";
+        public const string FisierJucarii = "jucarii.txt";
+        public const string FisierHrana = "hrana.txt";
     }
 }
