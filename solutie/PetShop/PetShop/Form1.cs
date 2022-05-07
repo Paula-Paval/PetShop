@@ -14,7 +14,7 @@ using static View.Meniu;
 
 namespace PetShop
 {
-    public partial class FormPetShop : Form
+    public partial class FormPetShop : Form, IView
     {
         private IPresenter _presenter= new Presenter.Presenter();
 
@@ -73,7 +73,10 @@ namespace PetShop
             comboBoxTipCumparare.SelectedItem = Categorii.animal;
             _presenter.Init();
         }
-
+        public void SetPresenter(IPresenter presenter)
+        {
+            _presenter = presenter;
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -343,5 +346,7 @@ namespace PetShop
                     break;
             }
         }
+
+       
     }
 }
