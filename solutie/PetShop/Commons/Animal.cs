@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Commons
 {
-    public class Animal:Produs
+    public class Animal : Produs
     {
         public int Varsta { get; set; }
-        public string  Categorie { get; set; }
+        public string Categorie { get; set; }
     }
 
 }

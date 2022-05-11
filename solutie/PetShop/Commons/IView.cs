@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Commons
 {
-    public  interface IView
+    public interface IView
     {
-       void SetPresenter(IPresenter presenter); 
-        
+        void SetPresenter(IPresenter presenter);
+
     }
 }

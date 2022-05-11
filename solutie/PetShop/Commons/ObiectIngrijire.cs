@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Commons
 {
-    public class ObiectIngrijire:Produs
+    public class ObiectIngrijire : Produs
     {
         public string Categorie { get; set; }
         public string Denumire { get; set; }

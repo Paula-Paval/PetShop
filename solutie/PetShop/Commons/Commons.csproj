@@ -45,6 +45,10 @@
     <Compile Include="Constante.cs" />
     <Compile Include="Hrana.cs" />
     <Compile Include="IModel.cs" />
+    <Compile Include="infrastucture\FisierNotFoundException.cs" />
+    <Compile Include="infrastucture\IdNegativExcetion.cs" />
+    <Compile Include="infrastucture\PretNegativException.cs" />
+    <Compile Include="infrastucture\VarstaException.cs" />
     <Compile Include="IPresenter.cs" />
     <Compile Include="IView.cs" />
     <Compile Include="Jucarie.cs" />

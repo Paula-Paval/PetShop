@@ -9,7 +9,7 @@ namespace Commons
     public class Produs
     {
         public int Id { get; set; }
-        public double  Pret { get; set; }
-   
+        public double Pret { get; set; }
+
     }
 }

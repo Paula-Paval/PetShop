@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Commons
 {
-    public class Jucarie:Produs
+    public class Jucarie : Produs
     {
         public string Denumire { get; set; }
     }

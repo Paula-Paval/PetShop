@@ -15,6 +15,6 @@ namespace Commons
         bool RemoveProdus(int id, string tip);
         bool Cumpara(string tip, string denumire);
         string List(string tip);
-        void Init();  
+        void Init();
     }
 }

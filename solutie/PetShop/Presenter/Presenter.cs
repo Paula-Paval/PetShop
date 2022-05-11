@@ -42,30 +42,30 @@ namespace Presenter
 
         public bool ProdusExists(string tip, string denumire)
         {
-           return  _model.Exists(tip, denumire);
+            return _model.Exists(tip, denumire);
         }
 
         public bool RemoveProdus(int id, string tip)
         {
-           switch(tip)
+            switch (tip)
             {
                 case Constante.Animal:
-                   return _model.DeleteAnimal(id);
-                    
+                    return _model.DeleteAnimal(id);
+
                 case Constante.ObiectDeIngrijire:
                     return _model.DeleteObiectIngrijire(id);
-                   
+
                 case Constante.Hrana:
                     return _model.DeleteHrana(id);
-                   
+
                 case Constante.Jucarie:
                     return _model.DeleteJucarii(id);
-                default:return false;
-                    
+                default: return false;
+
             }
         }
 
-        public string List(string  tip)
+        public string List(string tip)
         {
             return _model.ListAll(tip);
         }
@@ -80,6 +80,6 @@ namespace Presenter
             return true;
         }
 
-     
+
     }
 }
