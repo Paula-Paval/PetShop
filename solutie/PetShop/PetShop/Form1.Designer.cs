@@ -29,13 +29,14 @@ namespace PetShop
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPetShop));
             this.listBoxMenu = new System.Windows.Forms.ListBox();
             this.listBox = new System.Windows.Forms.ListBox();
             this.groupBoxAdaugare = new System.Windows.Forms.GroupBox();
-            this.buttonAdauga = new System.Windows.Forms.Button();
             this.groupBoxJucarii = new System.Windows.Forms.GroupBox();
             this.labelDenumireJucarie = new System.Windows.Forms.Label();
             this.textBoxDenumireJucarie = new System.Windows.Forms.TextBox();
+            this.buttonAdauga = new System.Windows.Forms.Button();
             this.groupBoxHrana = new System.Windows.Forms.GroupBox();
             this.labelDenumireHrana = new System.Windows.Forms.Label();
             this.labelCategorieHrana = new System.Windows.Forms.Label();
@@ -59,6 +60,8 @@ namespace PetShop
             this.textBoxId = new System.Windows.Forms.TextBox();
             this.groupBoxOptiuni = new System.Windows.Forms.GroupBox();
             this.groupBoxUser = new System.Windows.Forms.GroupBox();
+            this.labelTipCumparare = new System.Windows.Forms.Label();
+            this.comboBoxTipCumparare = new System.Windows.Forms.ComboBox();
             this.buttonCumpara = new System.Windows.Forms.Button();
             this.textBoxCumparare = new System.Windows.Forms.TextBox();
             this.richTextBoxAfisare = new System.Windows.Forms.RichTextBox();
@@ -68,8 +71,10 @@ namespace PetShop
             this.buttonStegere = new System.Windows.Forms.Button();
             this.labelIdDeSters = new System.Windows.Forms.Label();
             this.textBoxIdDeSters = new System.Windows.Forms.TextBox();
-            this.comboBoxTipCumparare = new System.Windows.Forms.ComboBox();
-            this.labelTipCumparare = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBoxAdaugare.SuspendLayout();
             this.groupBoxJucarii.SuspendLayout();
             this.groupBoxHrana.SuspendLayout();
@@ -78,6 +83,8 @@ namespace PetShop
             this.groupBoxOptiuni.SuspendLayout();
             this.groupBoxUser.SuspendLayout();
             this.groupBoxStergere.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // listBoxMenu
@@ -96,18 +103,19 @@ namespace PetShop
             // 
             // listBox
             // 
+            this.listBox.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.listBox.FormattingEnabled = true;
             this.listBox.ItemHeight = 16;
             this.listBox.Location = new System.Drawing.Point(101, 21);
             this.listBox.Name = "listBox";
-            this.listBox.Size = new System.Drawing.Size(266, 84);
+            this.listBox.Size = new System.Drawing.Size(232, 84);
             this.listBox.TabIndex = 1;
             this.listBox.SelectedIndexChanged += new System.EventHandler(this.listBox_SelectedIndexChanged);
             // 
             // groupBoxAdaugare
             // 
-            this.groupBoxAdaugare.Controls.Add(this.buttonAdauga);
             this.groupBoxAdaugare.Controls.Add(this.groupBoxJucarii);
+            this.groupBoxAdaugare.Controls.Add(this.buttonAdauga);
             this.groupBoxAdaugare.Controls.Add(this.groupBoxHrana);
             this.groupBoxAdaugare.Controls.Add(this.groupBoxObiectDeIngrijire);
             this.groupBoxAdaugare.Controls.Add(this.groupBoxAnimal);
@@ -117,28 +125,18 @@ namespace PetShop
             this.groupBoxAdaugare.Controls.Add(this.comboBoxCategorii);
             this.groupBoxAdaugare.Controls.Add(this.textBoxPret);
             this.groupBoxAdaugare.Controls.Add(this.textBoxId);
-            this.groupBoxAdaugare.Location = new System.Drawing.Point(400, 30);
+            this.groupBoxAdaugare.Location = new System.Drawing.Point(137, 155);
             this.groupBoxAdaugare.Name = "groupBoxAdaugare";
-            this.groupBoxAdaugare.Size = new System.Drawing.Size(866, 220);
+            this.groupBoxAdaugare.Size = new System.Drawing.Size(1149, 256);
             this.groupBoxAdaugare.TabIndex = 2;
             this.groupBoxAdaugare.TabStop = false;
             this.groupBoxAdaugare.Text = "Adaugare";
-            // 
-            // buttonAdauga
-            // 
-            this.buttonAdauga.Location = new System.Drawing.Point(723, 167);
-            this.buttonAdauga.Name = "buttonAdauga";
-            this.buttonAdauga.Size = new System.Drawing.Size(75, 34);
-            this.buttonAdauga.TabIndex = 17;
-            this.buttonAdauga.Text = "Adauga";
-            this.buttonAdauga.UseVisualStyleBackColor = true;
-            this.buttonAdauga.Click += new System.EventHandler(this.buttonAdauga_Click);
             // 
             // groupBoxJucarii
             // 
             this.groupBoxJucarii.Controls.Add(this.labelDenumireJucarie);
             this.groupBoxJucarii.Controls.Add(this.textBoxDenumireJucarie);
-            this.groupBoxJucarii.Location = new System.Drawing.Point(660, 26);
+            this.groupBoxJucarii.Location = new System.Drawing.Point(861, 26);
             this.groupBoxJucarii.Name = "groupBoxJucarii";
             this.groupBoxJucarii.Size = new System.Drawing.Size(186, 129);
             this.groupBoxJucarii.TabIndex = 16;
@@ -161,15 +159,25 @@ namespace PetShop
             this.textBoxDenumireJucarie.Size = new System.Drawing.Size(133, 22);
             this.textBoxDenumireJucarie.TabIndex = 0;
             // 
+            // buttonAdauga
+            // 
+            this.buttonAdauga.Location = new System.Drawing.Point(861, 167);
+            this.buttonAdauga.Name = "buttonAdauga";
+            this.buttonAdauga.Size = new System.Drawing.Size(146, 56);
+            this.buttonAdauga.TabIndex = 17;
+            this.buttonAdauga.Text = "Adauga";
+            this.buttonAdauga.UseVisualStyleBackColor = true;
+            this.buttonAdauga.Click += new System.EventHandler(this.buttonAdauga_Click);
+            // 
             // groupBoxHrana
             // 
             this.groupBoxHrana.Controls.Add(this.labelDenumireHrana);
             this.groupBoxHrana.Controls.Add(this.labelCategorieHrana);
             this.groupBoxHrana.Controls.Add(this.textBoxDenumireHrana);
             this.groupBoxHrana.Controls.Add(this.comboBoxCategorieHrana);
-            this.groupBoxHrana.Location = new System.Drawing.Point(464, 26);
+            this.groupBoxHrana.Location = new System.Drawing.Point(601, 21);
             this.groupBoxHrana.Name = "groupBoxHrana";
-            this.groupBoxHrana.Size = new System.Drawing.Size(174, 170);
+            this.groupBoxHrana.Size = new System.Drawing.Size(174, 175);
             this.groupBoxHrana.TabIndex = 15;
             this.groupBoxHrana.TabStop = false;
             this.groupBoxHrana.Text = "Hrana";
@@ -213,7 +221,7 @@ namespace PetShop
             this.groupBoxObiectDeIngrijire.Controls.Add(this.labelCategorieObiectDeIngrijire);
             this.groupBoxObiectDeIngrijire.Controls.Add(this.textBoxDenumireObiect);
             this.groupBoxObiectDeIngrijire.Controls.Add(this.comboBoxCategorieIngrijire);
-            this.groupBoxObiectDeIngrijire.Location = new System.Drawing.Point(294, 21);
+            this.groupBoxObiectDeIngrijire.Location = new System.Drawing.Point(378, 21);
             this.groupBoxObiectDeIngrijire.Name = "groupBoxObiectDeIngrijire";
             this.groupBoxObiectDeIngrijire.Size = new System.Drawing.Size(151, 175);
             this.groupBoxObiectDeIngrijire.TabIndex = 14;
@@ -261,7 +269,7 @@ namespace PetShop
             this.groupBoxAnimal.Controls.Add(this.labelVarstaAnimal);
             this.groupBoxAnimal.Controls.Add(this.labelCategorieAnimal);
             this.groupBoxAnimal.Controls.Add(this.comboBoxSpecie);
-            this.groupBoxAnimal.Location = new System.Drawing.Point(132, 21);
+            this.groupBoxAnimal.Location = new System.Drawing.Point(158, 21);
             this.groupBoxAnimal.Name = "groupBoxAnimal";
             this.groupBoxAnimal.Size = new System.Drawing.Size(145, 175);
             this.groupBoxAnimal.TabIndex = 13;
@@ -357,9 +365,9 @@ namespace PetShop
             // 
             this.groupBoxOptiuni.Controls.Add(this.listBoxMenu);
             this.groupBoxOptiuni.Controls.Add(this.listBox);
-            this.groupBoxOptiuni.Location = new System.Drawing.Point(21, 30);
+            this.groupBoxOptiuni.Location = new System.Drawing.Point(909, 12);
             this.groupBoxOptiuni.Name = "groupBoxOptiuni";
-            this.groupBoxOptiuni.Size = new System.Drawing.Size(373, 124);
+            this.groupBoxOptiuni.Size = new System.Drawing.Size(377, 137);
             this.groupBoxOptiuni.TabIndex = 3;
             this.groupBoxOptiuni.TabStop = false;
             this.groupBoxOptiuni.Text = "Optiuni";
@@ -370,18 +378,35 @@ namespace PetShop
             this.groupBoxUser.Controls.Add(this.comboBoxTipCumparare);
             this.groupBoxUser.Controls.Add(this.buttonCumpara);
             this.groupBoxUser.Controls.Add(this.textBoxCumparare);
-            this.groupBoxUser.Location = new System.Drawing.Point(21, 182);
+            this.groupBoxUser.Location = new System.Drawing.Point(137, 417);
             this.groupBoxUser.Name = "groupBoxUser";
-            this.groupBoxUser.Size = new System.Drawing.Size(373, 122);
+            this.groupBoxUser.Size = new System.Drawing.Size(477, 122);
             this.groupBoxUser.TabIndex = 4;
             this.groupBoxUser.TabStop = false;
             this.groupBoxUser.Text = "Cumparare";
             // 
+            // labelTipCumparare
+            // 
+            this.labelTipCumparare.AutoSize = true;
+            this.labelTipCumparare.Location = new System.Drawing.Point(16, 27);
+            this.labelTipCumparare.Name = "labelTipCumparare";
+            this.labelTipCumparare.Size = new System.Drawing.Size(28, 17);
+            this.labelTipCumparare.TabIndex = 5;
+            this.labelTipCumparare.Text = "Tip";
+            // 
+            // comboBoxTipCumparare
+            // 
+            this.comboBoxTipCumparare.FormattingEnabled = true;
+            this.comboBoxTipCumparare.Location = new System.Drawing.Point(50, 27);
+            this.comboBoxTipCumparare.Name = "comboBoxTipCumparare";
+            this.comboBoxTipCumparare.Size = new System.Drawing.Size(94, 24);
+            this.comboBoxTipCumparare.TabIndex = 2;
+            // 
             // buttonCumpara
             // 
-            this.buttonCumpara.Location = new System.Drawing.Point(267, 57);
+            this.buttonCumpara.Location = new System.Drawing.Point(308, 36);
             this.buttonCumpara.Name = "buttonCumpara";
-            this.buttonCumpara.Size = new System.Drawing.Size(75, 29);
+            this.buttonCumpara.Size = new System.Drawing.Size(154, 48);
             this.buttonCumpara.TabIndex = 1;
             this.buttonCumpara.Text = "Cumpara";
             this.buttonCumpara.UseVisualStyleBackColor = true;
@@ -389,7 +414,7 @@ namespace PetShop
             // 
             // textBoxCumparare
             // 
-            this.textBoxCumparare.Location = new System.Drawing.Point(19, 57);
+            this.textBoxCumparare.Location = new System.Drawing.Point(50, 62);
             this.textBoxCumparare.Multiline = true;
             this.textBoxCumparare.Name = "textBoxCumparare";
             this.textBoxCumparare.Size = new System.Drawing.Size(216, 27);
@@ -397,9 +422,9 @@ namespace PetShop
             // 
             // richTextBoxAfisare
             // 
-            this.richTextBoxAfisare.Location = new System.Drawing.Point(21, 310);
+            this.richTextBoxAfisare.Location = new System.Drawing.Point(137, 547);
             this.richTextBoxAfisare.Name = "richTextBoxAfisare";
-            this.richTextBoxAfisare.Size = new System.Drawing.Size(1245, 204);
+            this.richTextBoxAfisare.Size = new System.Drawing.Size(969, 182);
             this.richTextBoxAfisare.TabIndex = 5;
             this.richTextBoxAfisare.Text = "";
             // 
@@ -410,9 +435,9 @@ namespace PetShop
             this.groupBoxStergere.Controls.Add(this.buttonStegere);
             this.groupBoxStergere.Controls.Add(this.labelIdDeSters);
             this.groupBoxStergere.Controls.Add(this.textBoxIdDeSters);
-            this.groupBoxStergere.Location = new System.Drawing.Point(400, 256);
+            this.groupBoxStergere.Location = new System.Drawing.Point(633, 422);
             this.groupBoxStergere.Name = "groupBoxStergere";
-            this.groupBoxStergere.Size = new System.Drawing.Size(866, 48);
+            this.groupBoxStergere.Size = new System.Drawing.Size(653, 119);
             this.groupBoxStergere.TabIndex = 6;
             this.groupBoxStergere.TabStop = false;
             this.groupBoxStergere.Text = "Stergere";
@@ -436,9 +461,9 @@ namespace PetShop
             // 
             // buttonStegere
             // 
-            this.buttonStegere.Location = new System.Drawing.Point(553, 11);
+            this.buttonStegere.Location = new System.Drawing.Point(365, 29);
             this.buttonStegere.Name = "buttonStegere";
-            this.buttonStegere.Size = new System.Drawing.Size(75, 31);
+            this.buttonStegere.Size = new System.Drawing.Size(146, 50);
             this.buttonStegere.TabIndex = 2;
             this.buttonStegere.Text = "Stergere";
             this.buttonStegere.UseVisualStyleBackColor = true;
@@ -447,7 +472,7 @@ namespace PetShop
             // labelIdDeSters
             // 
             this.labelIdDeSters.AutoSize = true;
-            this.labelIdDeSters.Location = new System.Drawing.Point(317, 21);
+            this.labelIdDeSters.Location = new System.Drawing.Point(68, 64);
             this.labelIdDeSters.Name = "labelIdDeSters";
             this.labelIdDeSters.Size = new System.Drawing.Size(19, 17);
             this.labelIdDeSters.TabIndex = 1;
@@ -455,38 +480,67 @@ namespace PetShop
             // 
             // textBoxIdDeSters
             // 
-            this.textBoxIdDeSters.Location = new System.Drawing.Point(354, 18);
+            this.textBoxIdDeSters.Location = new System.Drawing.Point(121, 59);
             this.textBoxIdDeSters.Name = "textBoxIdDeSters";
             this.textBoxIdDeSters.Size = new System.Drawing.Size(162, 22);
             this.textBoxIdDeSters.TabIndex = 0;
             // 
-            // comboBoxTipCumparare
+            // pictureBox1
             // 
-            this.comboBoxTipCumparare.FormattingEnabled = true;
-            this.comboBoxTipCumparare.Location = new System.Drawing.Point(50, 27);
-            this.comboBoxTipCumparare.Name = "comboBoxTipCumparare";
-            this.comboBoxTipCumparare.Size = new System.Drawing.Size(94, 24);
-            this.comboBoxTipCumparare.TabIndex = 2;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.ImageLocation = "C:\\Users\\Admin\\Desktop\\Proiect IP\\PetShop\\solutie\\PetShop\\PetShop\\bin\\Debug\\PetSh" +
+    "op.png";
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(58, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(899, 137);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
-            // labelTipCumparare
+            // button1
             // 
-            this.labelTipCumparare.AutoSize = true;
-            this.labelTipCumparare.Location = new System.Drawing.Point(16, 27);
-            this.labelTipCumparare.Name = "labelTipCumparare";
-            this.labelTipCumparare.Size = new System.Drawing.Size(28, 17);
-            this.labelTipCumparare.TabIndex = 5;
-            this.labelTipCumparare.Text = "Tip";
+            this.button1.Location = new System.Drawing.Point(17, 31);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(146, 50);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Help";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(17, 106);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(146, 50);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Despre";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Location = new System.Drawing.Point(1112, 547);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(174, 182);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
             // 
             // FormPetShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1297, 562);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1425, 750);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxStergere);
             this.Controls.Add(this.richTextBoxAfisare);
+            this.Controls.Add(this.groupBoxAdaugare);
             this.Controls.Add(this.groupBoxUser);
             this.Controls.Add(this.groupBoxOptiuni);
-            this.Controls.Add(this.groupBoxAdaugare);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "FormPetShop";
             this.Text = "PetShop";
             this.groupBoxAdaugare.ResumeLayout(false);
@@ -504,6 +558,8 @@ namespace PetShop
             this.groupBoxUser.PerformLayout();
             this.groupBoxStergere.ResumeLayout(false);
             this.groupBoxStergere.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -551,6 +607,10 @@ namespace PetShop
         private System.Windows.Forms.ComboBox comboBoxTipStergere;
         private System.Windows.Forms.Label labelTipCumparare;
         private System.Windows.Forms.ComboBox comboBoxTipCumparare;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 

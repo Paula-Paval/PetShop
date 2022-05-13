@@ -471,6 +471,9 @@ namespace PetShop
             }
         }
 
-
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Proiect IP: PetShop \nRealizat de: \n \t *Bursuc Stefana \n \t *Chiahaia Georgiana \n \t *Paula Paval \n \t *Timofte Constantin-Bogdan \n Grupa: 1309B");
+        }
     }
 }
