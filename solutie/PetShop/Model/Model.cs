@@ -1,4 +1,14 @@
-﻿using Commons;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        Model.cs                                             *
+ *  Copyright:   (c) 2022, PetShop                                        *
+ *  E-mail:      paula.paval@student.tuiasi.ro                            *
+ *  Description:                                                          *
+ *                                                                        *
+ *                                                                        *
+ **************************************************************************/
+
+using Commons;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,6 +19,9 @@ using System.Linq;
 using Commons.infrastucture;
 namespace Model
 {
+    /// <summary>
+    /// Clasa model
+    /// </summary>
     public class Model : IModel
     {
         private List<Animal> _animale = new List<Animal>();
@@ -16,6 +29,9 @@ namespace Model
         private List<Jucarie> _jucarii = new List<Jucarie>();
         private List<Hrana> _hrana = new List<Hrana>();
 
+        /// <summary>
+        /// Adaugare animal
+        /// </summary>
         public void AddAnimal(Animal produs)
         {
             if (!File.Exists(Constante.FisierAnimale)) throw new FisierNotFoundException($"Fisierul {Constante.FisierAnimale}");
@@ -28,6 +44,9 @@ namespace Model
             ScriereInFisierAnimale();
         }
 
+        /// <summary>
+        /// Adaugare obiecte de ingrijire
+        /// </summary>
         public void AddObiecteIngrijire(ObiectIngrijire produs)
         {
             if (!File.Exists(Constante.FisierObiecteDeIngrijire)) throw new FisierNotFoundException($"Fisierul {Constante.FisierObiecteDeIngrijire}");
@@ -38,6 +57,9 @@ namespace Model
             ScriereInFisierObiecteIngrijire();
         }
 
+        /// <summary>
+        /// Adaugare jucarii
+        /// </summary>
         public void AddJucarii(Jucarie produs)
         {
             if (!File.Exists(Constante.FisierJucarii)) throw new FisierNotFoundException($"Fisierul {Constante.FisierJucarii}");
@@ -49,6 +71,9 @@ namespace Model
 
         }
 
+        /// <summary>
+        /// Adaugare hrana
+        /// </summary>
         public void AddHrana(Hrana produs)
         {
             if (!File.Exists(Constante.FisierHrana)) throw new FisierNotFoundException($"Fisierul {Constante.FisierHrana}");
@@ -59,6 +84,9 @@ namespace Model
             ScriereInFisierHrana();
         }
 
+        /// <summary>
+        /// Initializare date
+        /// </summary>
 
         public void InitializeData()
         {
@@ -74,6 +102,9 @@ namespace Model
 
         }
 
+        /// <summary>
+        /// Lista
+        /// </summary>
         public string ListAll(string tip)
         {
             switch (tip)
@@ -91,7 +122,9 @@ namespace Model
             }
         }
 
-
+        /// <summary>
+        /// Stergerea unui animal
+        /// </summary>
         public bool DeleteAnimal(int id)
         {
             if (id < 0) throw new IdNegativExcetion("Nu se poate realiza stergerea unui animal cu id negativ");
@@ -109,6 +142,9 @@ namespace Model
             return true;
         }
 
+        /// <summary>
+        /// Stergerea unui obiect de ingrijire
+        /// </summary>
         public bool DeleteObiectIngrijire(int id)
         {
             if (id < 0) throw new IdNegativExcetion("Nu se poate realiza stergerea unui obiect de ingrijire cu id negativ");
@@ -128,6 +164,9 @@ namespace Model
             return true;
         }
 
+        /// <summary>
+        /// Stergerea unei jucarii
+        /// </summary>
         public bool DeleteJucarii(int id)
         {
             if (id < 0) throw new IdNegativExcetion("Nu se poate realiza stergerea unei jucarii cu id negativ");
@@ -146,6 +185,9 @@ namespace Model
             return true;
         }
 
+        /// <summary>
+        /// Stergerea hranei
+        /// </summary>
         public bool DeleteHrana(int id)
         {
             if (id < 0) throw new IdNegativExcetion("Nu se poate realiza stergerea hranei cu id negativ");
@@ -164,6 +206,9 @@ namespace Model
             return true;
         }
 
+        /// <summary>
+        /// Cumpararea unui produs
+        /// </summary>
         public void Cumpara(string tip, string denumire)
         {
             switch (tip)
@@ -190,6 +235,9 @@ namespace Model
 
 
         }
+        /// <summary>
+        /// Existenta unui animal/ unui obiect de ingrijire/ hranei/ unei jucarii
+        /// </summary>
         public bool Exists(string tip, string denumire)
         {
             switch (tip)
