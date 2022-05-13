@@ -32,6 +32,7 @@ namespace Model
         /// <summary>
         /// Adaugare animal
         /// </summary>
+        /// <param name="produs">Obiect de tip Animal</param>
         public void AddAnimal(Animal produs)
         {
             if (!File.Exists(Constante.FisierAnimale)) throw new FisierNotFoundException($"Fisierul {Constante.FisierAnimale}");
@@ -47,6 +48,7 @@ namespace Model
         /// <summary>
         /// Adaugare obiecte de ingrijire
         /// </summary>
+        /// <param name="produs">Obiect de tip ObiectIngrijire</param>
         public void AddObiecteIngrijire(ObiectIngrijire produs)
         {
             if (!File.Exists(Constante.FisierObiecteDeIngrijire)) throw new FisierNotFoundException($"Fisierul {Constante.FisierObiecteDeIngrijire}");
@@ -60,6 +62,7 @@ namespace Model
         /// <summary>
         /// Adaugare jucarii
         /// </summary>
+        /// /// <param name="produs">Obiect de tip Jucarie</param>
         public void AddJucarii(Jucarie produs)
         {
             if (!File.Exists(Constante.FisierJucarii)) throw new FisierNotFoundException($"Fisierul {Constante.FisierJucarii}");
@@ -74,6 +77,8 @@ namespace Model
         /// <summary>
         /// Adaugare hrana
         /// </summary>
+        /// <param name="produs">Obiect de tip Hrana</param>
+      
         public void AddHrana(Hrana produs)
         {
             if (!File.Exists(Constante.FisierHrana)) throw new FisierNotFoundException($"Fisierul {Constante.FisierHrana}");
@@ -105,6 +110,8 @@ namespace Model
         /// <summary>
         /// Lista
         /// </summary>
+        /// <param name="tip">Tipul listei</param>
+        /// <returns>Retuneaza conversia listei la tipul de date string</returns>
         public string ListAll(string tip)
         {
             switch (tip)
@@ -125,6 +132,8 @@ namespace Model
         /// <summary>
         /// Stergerea unui animal
         /// </summary>
+        /// /// <param name="id">ID-ul animalului</param>
+        /// <returns>Returneaza daca s-a realizat cu succes</returns>
         public bool DeleteAnimal(int id)
         {
             if (id < 0) throw new IdNegativExcetion("Nu se poate realiza stergerea unui animal cu id negativ");
@@ -145,6 +154,8 @@ namespace Model
         /// <summary>
         /// Stergerea unui obiect de ingrijire
         /// </summary>
+        /// /// <param name="id">ID-ul obiectului de ingrijire</param>
+        /// <returns>Returneaza daca s-a realizat cu succes</returns>
         public bool DeleteObiectIngrijire(int id)
         {
             if (id < 0) throw new IdNegativExcetion("Nu se poate realiza stergerea unui obiect de ingrijire cu id negativ");
@@ -167,6 +178,8 @@ namespace Model
         /// <summary>
         /// Stergerea unei jucarii
         /// </summary>
+        /// /// <param name="id">ID-ul jucariei</param>
+        /// <returns>Returneaza daca s-a realizat cu succes</returns>
         public bool DeleteJucarii(int id)
         {
             if (id < 0) throw new IdNegativExcetion("Nu se poate realiza stergerea unei jucarii cu id negativ");
@@ -188,6 +201,8 @@ namespace Model
         /// <summary>
         /// Stergerea hranei
         /// </summary>
+        /// <param name="id">ID-ul hranei</param>
+        /// <returns>Returneaza daca s-a realizat cu succes</returns>
         public bool DeleteHrana(int id)
         {
             if (id < 0) throw new IdNegativExcetion("Nu se poate realiza stergerea hranei cu id negativ");
@@ -209,6 +224,9 @@ namespace Model
         /// <summary>
         /// Cumpararea unui produs
         /// </summary>
+        /// <param name="tip">Tipul unui produs cumparat</param>
+        /// <param name="denumire">Denumirea unui produs cumparat</param>
+        /// <returns>Returneaza daca s-a realizat cu succes</returns>
         public void Cumpara(string tip, string denumire)
         {
             switch (tip)
@@ -238,6 +256,9 @@ namespace Model
         /// <summary>
         /// Existenta unui animal/ unui obiect de ingrijire/ hranei/ unei jucarii
         /// </summary>
+        /// <param name="tip">Tipul unui produs existent</param>
+        /// <param name="denumire">Denumirea unui produs existent</param>
+        /// <returns>Returneaza daca exista</returns>
         public bool Exists(string tip, string denumire)
         {
             switch (tip)

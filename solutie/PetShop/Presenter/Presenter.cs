@@ -33,6 +33,7 @@ namespace Presenter
         /// <summary>
         /// Adaugare animal
         /// </summary>
+        /// <param name="p">Obiect de tip Animal</param>
         public void AddAnimal(Animal p)
         {
             _model.AddAnimal(p);
@@ -41,6 +42,7 @@ namespace Presenter
         /// <summary>
         /// Adaugare obiecte de ingrijire
         /// </summary>
+        /// <param name="p">Obiect de tip ObiectIngrijire</param>
         public void AddObiecteIngrijire(ObiectIngrijire p)
         {
             _model.AddObiecteIngrijire(p);
@@ -49,6 +51,7 @@ namespace Presenter
         /// <summary>
         /// Adaugare jucarii
         /// </summary>
+        /// <param name="p">Obiect de tip Jucarie</param>
         public void AddJucarii(Jucarie p)
         {
             _model.AddJucarii(p);
@@ -57,6 +60,7 @@ namespace Presenter
         /// <summary>
         /// Adaugare hrana
         /// </summary>
+        /// <param name="p">Obiect de tip Hrana</param>
         public void AddHrana(Hrana p)
         {
             _model.AddHrana(p);
@@ -74,6 +78,9 @@ namespace Presenter
         /// <summary>
         /// Existenta produs
         /// </summary>
+        /// <param name="tip">Tipul produsului existent</param>
+        /// <param name="denumire">Denumirea produsului existent</param>
+        /// <returns>Produsul care exista deja</returns>
         public bool ProdusExists(string tip, string denumire)
         {
             return _model.Exists(tip, denumire);
@@ -82,6 +89,9 @@ namespace Presenter
         /// <summary>
         /// stergerea unui produs
         /// </summary>
+        /// <param name="id">ID-ul produsului</param>
+        /// <param name="tip">Tipul produsului</param>
+        /// <returns>Returneaza daca s-a realizat cu succes</returns>
         public bool RemoveProdus(int id, string tip)
         {
             switch (tip)
@@ -105,7 +115,8 @@ namespace Presenter
         /// <summary>
         /// Lista
         /// </summary>
-
+        /// <param name="tip">Tipul listei</param>
+        /// <returns>Returneaza lista</returns>
         public string List(string tip)
         {
             return _model.ListAll(tip);
@@ -114,6 +125,9 @@ namespace Presenter
         /// <summary>
         /// Cumpararea unui produs
         /// </summary>
+        /// <param name="tip">Tipul produsului cumparat</param>
+        /// <param name="denumire">Denumirea produsului cumparat</param>
+        /// <returns>Returneaza produsul cumparat</returns>
         public bool Cumpara(string tip, string denumire)
         {
             if (!ProdusExists(tip, denumire))

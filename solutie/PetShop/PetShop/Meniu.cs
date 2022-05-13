@@ -45,6 +45,9 @@ namespace View
             /// <summary>
             /// Constructor
             /// </summary>
+            /// <param name="number">Numarul de optiuni</param>
+            /// <param name="text">Tipul de text</param>
+            /// <param name="choice">Obiect de tip UserChoice</param>
             public MenuOption(string number, string text, UserChoice choice)
             {
                 Number = number;
