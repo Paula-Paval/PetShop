@@ -149,16 +149,16 @@ namespace PetShop
                     groupBoxUser.Enabled = false;
                     groupBoxAdaugare.Enabled = false;
                     break;
-                case "Afisare tuturor animalelor":
+                case "Afisarea tuturor animalelor":
                     richTextBoxAfisare.Text = _presenter.List(Constante.Animal);
                     break;
-                case "Afisare tuturor jucariilor":
+                case "Afisarea tuturor jucariilor":
                     richTextBoxAfisare.Text = _presenter.List(Constante.Jucarie);
                     break;
-                case "Afisare tuturor obiectlor de ingrijire":
+                case "Afisarea tuturor obiectlor de ingrijire":
                     richTextBoxAfisare.Text = _presenter.List(Constante.ObiectDeIngrijire);
                     break;
-                case "Afisare hranei":
+                case "Afisarea hranei":
                     richTextBoxAfisare.Text = _presenter.List(Constante.Hrana);
                     break;
                 case "Cumparare":
@@ -473,7 +473,7 @@ namespace PetShop
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Proiect IP: PetShop \nRealizat de: \n \t *Bursuc Stefana \n \t *Chiahaia Georgiana \n \t *Paula Paval \n \t *Timofte Constantin-Bogdan \n Grupa: 1309B");
+            MessageBox.Show("Proiect IP: PetShop \nRealizat de: \n \t *Bursuc Stefana \n \t *Chihaia Georgiana \n \t *Paula Paval \n \t *Timofte Constantin-Bogdan \n Grupa: 1309B");
         }
     }
 }

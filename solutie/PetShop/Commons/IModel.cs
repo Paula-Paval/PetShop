@@ -37,6 +37,15 @@ namespace Commons
         bool Exists(string tip, string denumire);
         void InitializeData();
 
+        List<Animal> GetAnimals();
+        List<Jucarie> GetJucarii();
+        List<ObiectIngrijire> GetObiecteIngrijire();
+        List<Hrana> GetHrana();
+
+        void SetAnimals(List<Animal> animals);
+        void SetJucarii(List<Jucarie> jucarii);
+        void SetObiecteIngrijire(List<ObiectIngrijire> obiectIngrijire);
+        void SetHrana(List<Hrana> hrana);
 
     }
 }

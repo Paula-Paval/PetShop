@@ -78,7 +78,7 @@ namespace Model
         /// Adaugare hrana
         /// </summary>
         /// <param name="produs">Obiect de tip Hrana</param>
-      
+
         public void AddHrana(Hrana produs)
         {
             if (!File.Exists(Constante.FisierHrana)) throw new FisierNotFoundException($"Fisierul {Constante.FisierHrana}");
@@ -279,6 +279,38 @@ namespace Model
                     return false;
             }
         }
+        public void SetAnimals(List<Animal> animals)
+        {
+            _animale = animals;
+        }
+        public void SetJucarii(List<Jucarie> jucarii)
+        {
+            _jucarii = jucarii;
+        }
+        public void SetObiecteIngrijire(List<ObiectIngrijire> obiectIngrijire)
+        {
+            _obiecteIngrijire = obiectIngrijire;
+        }
+        public void SetHrana(List<Hrana> hrana)
+        {
+            _hrana = hrana;
+        }
+        public List<Animal> GetAnimals()
+        {
+            return _animale;
+        }
+        public List<Jucarie> GetJucarii()
+        {
+            return _jucarii;
+        }
+        public List<ObiectIngrijire> GetObiecteIngrijire()
+        {
+            return _obiecteIngrijire;
+        }
+        public List<Hrana> GetHrana()
+        {
+            return _hrana;
+        }
 
         #region [private methods]
         private void ScriereInFisierAnimale()
@@ -387,7 +419,7 @@ namespace Model
             return result;
         }
 
-        public List<Animal> CitireDinFisierAnimale()
+        private List<Animal> CitireDinFisierAnimale()
         {
             var result = new List<Animal>();
             IEnumerable<string> lines = File.ReadLines(Constante.FisierAnimale);
@@ -409,7 +441,7 @@ namespace Model
             return result;
         }
 
-        public List<Hrana> CitireDinFisierHrana()
+        private List<Hrana> CitireDinFisierHrana()
         {
             var result = new List<Hrana>();
             IEnumerable<string> lines = File.ReadLines(Constante.FisierHrana);
@@ -431,7 +463,7 @@ namespace Model
             return result;
         }
 
-        public List<Jucarie> CitireDinFisierJucarii()
+        private List<Jucarie> CitireDinFisierJucarii()
         {
             var result = new List<Jucarie>();
             IEnumerable<string> lines = File.ReadLines(Constante.FisierJucarii);
