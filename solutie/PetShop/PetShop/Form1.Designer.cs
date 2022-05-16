@@ -75,6 +75,7 @@ namespace PetShop
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.denumireProdusCumparat = new System.Windows.Forms.Label();
             this.groupBoxAdaugare.SuspendLayout();
             this.groupBoxJucarii.SuspendLayout();
             this.groupBoxHrana.SuspendLayout();
@@ -374,6 +375,7 @@ namespace PetShop
             // 
             // groupBoxUser
             // 
+            this.groupBoxUser.Controls.Add(this.denumireProdusCumparat);
             this.groupBoxUser.Controls.Add(this.labelTipCumparare);
             this.groupBoxUser.Controls.Add(this.comboBoxTipCumparare);
             this.groupBoxUser.Controls.Add(this.buttonCumpara);
@@ -388,7 +390,7 @@ namespace PetShop
             // labelTipCumparare
             // 
             this.labelTipCumparare.AutoSize = true;
-            this.labelTipCumparare.Location = new System.Drawing.Point(16, 27);
+            this.labelTipCumparare.Location = new System.Drawing.Point(13, 31);
             this.labelTipCumparare.Name = "labelTipCumparare";
             this.labelTipCumparare.Size = new System.Drawing.Size(28, 17);
             this.labelTipCumparare.TabIndex = 5;
@@ -397,7 +399,7 @@ namespace PetShop
             // comboBoxTipCumparare
             // 
             this.comboBoxTipCumparare.FormattingEnabled = true;
-            this.comboBoxTipCumparare.Location = new System.Drawing.Point(50, 27);
+            this.comboBoxTipCumparare.Location = new System.Drawing.Point(97, 28);
             this.comboBoxTipCumparare.Name = "comboBoxTipCumparare";
             this.comboBoxTipCumparare.Size = new System.Drawing.Size(94, 24);
             this.comboBoxTipCumparare.TabIndex = 2;
@@ -414,10 +416,10 @@ namespace PetShop
             // 
             // textBoxCumparare
             // 
-            this.textBoxCumparare.Location = new System.Drawing.Point(50, 62);
+            this.textBoxCumparare.Location = new System.Drawing.Point(97, 66);
             this.textBoxCumparare.Multiline = true;
             this.textBoxCumparare.Name = "textBoxCumparare";
-            this.textBoxCumparare.Size = new System.Drawing.Size(216, 27);
+            this.textBoxCumparare.Size = new System.Drawing.Size(191, 27);
             this.textBoxCumparare.TabIndex = 0;
             // 
             // richTextBoxAfisare
@@ -489,7 +491,6 @@ namespace PetShop
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.ImageLocation = "C:\\Users\\Admin\\Desktop\\Proiect IP\\PetShop\\solutie\\PetShop\\PetShop\\bin\\Debug\\PetSh" +
     "op.png";
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
@@ -527,6 +528,15 @@ namespace PetShop
             this.groupBox1.Size = new System.Drawing.Size(174, 182);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
+            // 
+            // denumireProdusCumparat
+            // 
+            this.denumireProdusCumparat.AutoSize = true;
+            this.denumireProdusCumparat.Location = new System.Drawing.Point(13, 69);
+            this.denumireProdusCumparat.Name = "denumireProdusCumparat";
+            this.denumireProdusCumparat.Size = new System.Drawing.Size(69, 17);
+            this.denumireProdusCumparat.TabIndex = 6;
+            this.denumireProdusCumparat.Text = "Denumire";
             // 
             // FormPetShop
             // 
@@ -611,6 +621,7 @@ namespace PetShop
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label denumireProdusCumparat;
     }
 }
 

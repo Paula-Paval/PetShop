@@ -163,6 +163,8 @@ namespace PetShop
                     break;
                 case "Cumparare":
                     groupBoxUser.Enabled = true;
+                    groupBoxAdaugare.Enabled = false;
+                    groupBoxStergere.Enabled = false;
                     break;
 
             }
