@@ -133,7 +133,8 @@ namespace PetShop
 
         private void listBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch (listBox.SelectedItem.ToString())
+            var valoare = listBox.SelectedItem.ToString();
+;            switch (valoare)
             {
                 case "Introducerea unui produs":
                     groupBoxAdaugare.Enabled = true;
@@ -155,10 +156,10 @@ namespace PetShop
                 case "Afisarea tuturor jucariilor":
                     richTextBoxAfisare.Text = _presenter.List(Constante.Jucarie);
                     break;
-                case "Afisarea tuturor obiectlor de ingrijire":
+                case "Afisarea tuturor obiectlor de ingrijire ":
                     richTextBoxAfisare.Text = _presenter.List(Constante.ObiectDeIngrijire);
                     break;
-                case "Afisarea hranei":
+                case "Afisarea hranei ":
                     richTextBoxAfisare.Text = _presenter.List(Constante.Hrana);
                     break;
                 case "Cumparare":
@@ -345,9 +346,10 @@ namespace PetShop
 
         private void buttonStegere_Click(object sender, EventArgs e)
         {
-            var id = Convert.ToInt32(textBoxIdDeSters.Text);
+           
             try
             {
+                var id = Convert.ToInt32(textBoxIdDeSters.Text);
                 switch (comboBoxTipStergere.SelectedItem)
                 {
                     case Categorii.animal:
