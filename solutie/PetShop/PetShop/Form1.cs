@@ -56,7 +56,7 @@ namespace PetShop
 
 
         /// <summary>
-        /// 
+        /// FormPetShop
         /// </summary>
         public FormPetShop()
         {
@@ -78,6 +78,11 @@ namespace PetShop
             comboBoxTipCumparare.SelectedItem = Categorii.animal;
 
         }
+
+        /// <summary>
+        /// SetPresenter
+        /// </summary>
+        /// <param name="presenter">Obiect de tip IPresenter</param>
         public void SetPresenter(IPresenter presenter)
         {
             _presenter = presenter;
@@ -114,6 +119,11 @@ namespace PetShop
 
         }
 
+        /// <summary>
+        /// Lista meniu
+        /// </summary>
+        /// <param name="sender">Parametru de tip object</param>
+        /// <param name="e">Parametru de tip EventArgs</param>
         private void listBoxMenu_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -135,9 +145,12 @@ namespace PetShop
                 listBox.Items.Add(item.Text);
             }
         }
+
         /// <summary>
-        /// Lista
+        /// Lista 
         /// </summary>
+        /// <param name="sender">Parametru de tip object</param>
+        /// <param name="e">Parametru de tip EventArgs</param>
         private void listBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             var valoare = listBox.SelectedItem.ToString();
@@ -181,7 +194,8 @@ namespace PetShop
         /// <summary>
         /// Categorii
         /// </summary>
-
+        /// <param name="sender">Parametru de tip object</param>
+        /// <param name="e">Parametru de tip EventArgs</param>
         private void comboBoxCategorii_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (comboBoxCategorii.SelectedItem)
@@ -219,7 +233,8 @@ namespace PetShop
         /// <summary>
         /// Butonul adauga
         /// </summary>
-
+        /// <param name="sender">Parametru de tip object</param>
+        /// <param name="e">Parametru de tip EventArgs</param>
         private void buttonAdauga_Click(object sender, EventArgs e)
         {
 
@@ -359,6 +374,12 @@ namespace PetShop
             }
         }
 
+        /// <summary>
+        /// Butonul stergere
+        /// </summary>
+        /// <param name="sender">Parametru de tip object</param>
+        /// <param name="e">Parametru de tip EventArgs</param>
+
         private void buttonStegere_Click(object sender, EventArgs e)
         {
            
@@ -426,6 +447,11 @@ namespace PetShop
 
         }
 
+        /// <summary>
+        /// Butonul cumpara
+        /// </summary>
+        /// <param name="sender">Parametru de tip object</param>
+        /// <param name="e">Parametru de tip EventArgs</param>
         private void buttonCumpara_Click(object sender, EventArgs e)
         {
             var denumire = textBoxCumparare.Text;
@@ -490,6 +516,11 @@ namespace PetShop
             }
         }
 
+        /// <summary>
+        /// Butonul about
+        /// </summary>
+        /// <param name="sender">Parametru de tip object</param>
+        /// <param name="e">Parametru de tip EventArgs</param>
         private void buttonAbout_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Proiect IP: PetShop \nRealizat de: \n \t *Bursuc Stefana \n \t *Chihaia Georgiana \n \t *Paula Paval \n \t *Timofte Constantin-Bogdan \n Grupa: 1309B");
