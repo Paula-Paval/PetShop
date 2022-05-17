@@ -72,9 +72,9 @@ namespace PetShop
             this.labelIdDeSters = new System.Windows.Forms.Label();
             this.textBoxIdDeSters = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonHelp = new System.Windows.Forms.Button();
+            this.buttonAbout = new System.Windows.Forms.Button();
             this.groupBoxAdaugare.SuspendLayout();
             this.groupBoxJucarii.SuspendLayout();
             this.groupBoxHrana.SuspendLayout();
@@ -489,7 +489,6 @@ namespace PetShop
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.ImageLocation = "C:\\Users\\Admin\\Desktop\\Proiect IP\\PetShop\\solutie\\PetShop\\PetShop\\bin\\Debug\\PetSh" +
     "op.png";
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
@@ -499,34 +498,34 @@ namespace PetShop
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(17, 31);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 50);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Help";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(17, 106);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 50);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Despre";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.buttonAbout);
+            this.groupBox1.Controls.Add(this.buttonHelp);
             this.groupBox1.Location = new System.Drawing.Point(1112, 547);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(174, 182);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
+            // 
+            // buttonHelp
+            // 
+            this.buttonHelp.Location = new System.Drawing.Point(16, 23);
+            this.buttonHelp.Name = "buttonHelp";
+            this.buttonHelp.Size = new System.Drawing.Size(146, 50);
+            this.buttonHelp.TabIndex = 5;
+            this.buttonHelp.Text = "Help";
+            this.buttonHelp.UseVisualStyleBackColor = true;
+            // 
+            // buttonAbout
+            // 
+            this.buttonAbout.Location = new System.Drawing.Point(16, 96);
+            this.buttonAbout.Name = "buttonAbout";
+            this.buttonAbout.Size = new System.Drawing.Size(146, 50);
+            this.buttonAbout.TabIndex = 6;
+            this.buttonAbout.Text = "Despre";
+            this.buttonAbout.UseVisualStyleBackColor = true;
+            this.buttonAbout.Click += new System.EventHandler(this.buttonAbout_Click);
             // 
             // FormPetShop
             // 
@@ -608,9 +607,9 @@ namespace PetShop
         private System.Windows.Forms.Label labelTipCumparare;
         private System.Windows.Forms.ComboBox comboBoxTipCumparare;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button buttonAbout;
+        private System.Windows.Forms.Button buttonHelp;
     }
 }
 

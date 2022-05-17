@@ -281,6 +281,9 @@ namespace Model
         }
 
         #region [private methods]
+        /// <summary>
+        /// Scrierea in fisier (Animale)
+        /// </summary>
         private void ScriereInFisierAnimale()
         {
             var stream = new StreamWriter(Constante.FisierAnimale);
@@ -292,6 +295,9 @@ namespace Model
             }
             stream.Close();
         }
+        /// <summary>
+        /// Scrierea in fisier (Obiecte de Ingrijire)
+        /// </summary>
         private void ScriereInFisierObiecteIngrijire()
         {
             var stream = new StreamWriter(Constante.FisierObiecteDeIngrijire);
@@ -303,6 +309,10 @@ namespace Model
             stream.Close();
 
         }
+
+        /// <summary>
+        /// Scrierea in fisier (Jucarii)
+        /// </summary>
         private void ScriereInFisierJucarii()
         {
             var stream = new StreamWriter(Constante.FisierJucarii);
@@ -314,6 +324,9 @@ namespace Model
             stream.Close();
         }
 
+        /// <summary>
+        /// Scrierea in fisier (Hrana)
+        /// </summary>
         private void ScriereInFisierHrana()
         {
             var stream = new StreamWriter(Constante.FisierHrana);
@@ -325,6 +338,9 @@ namespace Model
             stream.Close();
         }
 
+        /// <summary>
+        /// Conversia listei in string (Animale)
+        /// </summary>
         private string ConvertListOfAnimalsToString()
         {
             var result = "";
@@ -335,6 +351,9 @@ namespace Model
             return result;
         }
 
+        /// <summary>
+        /// Conversia listei in string (Obiecte de ingrijire)
+        /// </summary>
         private string ConvertListOfObiecteToString()
         {
             var result = "";
@@ -344,6 +363,10 @@ namespace Model
             }
             return result;
         }
+
+        /// <summary>
+        /// Conversia listei in string (Hrana)
+        /// </summary>
         private string ConvertListOfHranaToString()
         {
             var result = "";
@@ -354,6 +377,9 @@ namespace Model
             return result;
         }
 
+        /// <summary>
+        /// Conversia listei in string (Jucarii)
+        /// </summary>
         private string ConvertListOfJucariiToString()
         {
             var result = "";
@@ -364,6 +390,9 @@ namespace Model
             return result;
         }
 
+        /// <summary>
+        /// Citirea din fisier (Obiecte de ingrijire)
+        /// </summary>
         public List<ObiectIngrijire> CitireDinFisierObiectDeIngrijire()
         {
             var result = new List<ObiectIngrijire>();
@@ -387,6 +416,9 @@ namespace Model
             return result;
         }
 
+        /// <summary>
+        /// Citirea din fisier (Animale)
+        /// </summary>
         public List<Animal> CitireDinFisierAnimale()
         {
             var result = new List<Animal>();
@@ -409,6 +441,9 @@ namespace Model
             return result;
         }
 
+        /// <summary>
+        /// Citirea din fisier (Hrana)
+        /// </summary>
         public List<Hrana> CitireDinFisierHrana()
         {
             var result = new List<Hrana>();
@@ -431,6 +466,9 @@ namespace Model
             return result;
         }
 
+        /// <summary>
+        /// Citirea din fisier (Jucarii)
+        /// </summary>
         public List<Jucarie> CitireDinFisierJucarii()
         {
             var result = new List<Jucarie>();

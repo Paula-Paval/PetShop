@@ -14,6 +14,9 @@ using Commons.infrastucture;
 
 namespace PetShop
 {
+    /// <summary>
+    /// Clasa FormPetShop
+    /// </summary>
     public partial class FormPetShop : Form, IView
     {
         private IPresenter _presenter;
@@ -52,7 +55,9 @@ namespace PetShop
         }
 
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public FormPetShop()
         {
             InitializeComponent();
@@ -130,7 +135,9 @@ namespace PetShop
                 listBox.Items.Add(item.Text);
             }
         }
-
+        /// <summary>
+        /// Lista
+        /// </summary>
         private void listBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (listBox.SelectedItem.ToString())
@@ -168,6 +175,10 @@ namespace PetShop
             }
         }
 
+        /// <summary>
+        /// Categorii
+        /// </summary>
+
         private void comboBoxCategorii_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (comboBoxCategorii.SelectedItem)
@@ -201,6 +212,10 @@ namespace PetShop
 
             }
         }
+
+        /// <summary>
+        /// Butonul adauga
+        /// </summary>
 
         private void buttonAdauga_Click(object sender, EventArgs e)
         {
@@ -471,7 +486,7 @@ namespace PetShop
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonAbout_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Proiect IP: PetShop \nRealizat de: \n \t *Bursuc Stefana \n \t *Chihaia Georgiana \n \t *Paula Paval \n \t *Timofte Constantin-Bogdan \n Grupa: 1309B");
         }
