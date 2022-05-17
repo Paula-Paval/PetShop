@@ -140,7 +140,8 @@ namespace PetShop
         /// </summary>
         private void listBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch (listBox.SelectedItem.ToString())
+            var valoare = listBox.SelectedItem.ToString();
+;            switch (valoare)
             {
                 case "Introducerea unui produs":
                     groupBoxAdaugare.Enabled = true;
@@ -156,20 +157,22 @@ namespace PetShop
                     groupBoxUser.Enabled = false;
                     groupBoxAdaugare.Enabled = false;
                     break;
-                case "Afisare tuturor animalelor":
+                case "Afisarea tuturor animalelor":
                     richTextBoxAfisare.Text = _presenter.List(Constante.Animal);
                     break;
-                case "Afisare tuturor jucariilor":
+                case "Afisarea tuturor jucariilor":
                     richTextBoxAfisare.Text = _presenter.List(Constante.Jucarie);
                     break;
-                case "Afisare tuturor obiectlor de ingrijire":
+                case "Afisarea tuturor obiectlor de ingrijire ":
                     richTextBoxAfisare.Text = _presenter.List(Constante.ObiectDeIngrijire);
                     break;
-                case "Afisare hranei":
+                case "Afisarea hranei ":
                     richTextBoxAfisare.Text = _presenter.List(Constante.Hrana);
                     break;
                 case "Cumparare":
                     groupBoxUser.Enabled = true;
+                    groupBoxAdaugare.Enabled = false;
+                    groupBoxStergere.Enabled = false;
                     break;
 
             }
@@ -358,9 +361,10 @@ namespace PetShop
 
         private void buttonStegere_Click(object sender, EventArgs e)
         {
-            var id = Convert.ToInt32(textBoxIdDeSters.Text);
+           
             try
             {
+                var id = Convert.ToInt32(textBoxIdDeSters.Text);
                 switch (comboBoxTipStergere.SelectedItem)
                 {
                     case Categorii.animal:
@@ -427,7 +431,7 @@ namespace PetShop
             var denumire = textBoxCumparare.Text;
             try
             {
-                switch (comboBoxTipStergere.SelectedItem)
+                switch (comboBoxTipCumparare.SelectedItem)
                 {
                     case Categorii.animal:
                         if (!_presenter.Cumpara(Constante.Animal, denumire))

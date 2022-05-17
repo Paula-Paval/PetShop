@@ -78,7 +78,7 @@ namespace Model
         /// Adaugare hrana
         /// </summary>
         /// <param name="produs">Obiect de tip Hrana</param>
-      
+
         public void AddHrana(Hrana produs)
         {
             if (!File.Exists(Constante.FisierHrana)) throw new FisierNotFoundException($"Fisierul {Constante.FisierHrana}");
@@ -279,6 +279,38 @@ namespace Model
                     return false;
             }
         }
+        public void SetAnimals(List<Animal> animals)
+        {
+            _animale = animals;
+        }
+        public void SetJucarii(List<Jucarie> jucarii)
+        {
+            _jucarii = jucarii;
+        }
+        public void SetObiecteIngrijire(List<ObiectIngrijire> obiectIngrijire)
+        {
+            _obiecteIngrijire = obiectIngrijire;
+        }
+        public void SetHrana(List<Hrana> hrana)
+        {
+            _hrana = hrana;
+        }
+        public List<Animal> GetAnimals()
+        {
+            return _animale;
+        }
+        public List<Jucarie> GetJucarii()
+        {
+            return _jucarii;
+        }
+        public List<ObiectIngrijire> GetObiecteIngrijire()
+        {
+            return _obiecteIngrijire;
+        }
+        public List<Hrana> GetHrana()
+        {
+            return _hrana;
+        }
 
         #region [private methods]
         /// <summary>
@@ -416,6 +448,7 @@ namespace Model
             return result;
         }
 
+        private List<Animal> CitireDinFisierAnimale()
         /// <summary>
         /// Citirea din fisier (Animale)
         /// </summary>
@@ -441,6 +474,7 @@ namespace Model
             return result;
         }
 
+        private List<Hrana> CitireDinFisierHrana()
         /// <summary>
         /// Citirea din fisier (Hrana)
         /// </summary>
@@ -466,6 +500,7 @@ namespace Model
             return result;
         }
 
+        private List<Jucarie> CitireDinFisierJucarii()
         /// <summary>
         /// Citirea din fisier (Jucarii)
         /// </summary>
