@@ -425,7 +425,7 @@ namespace Model
         /// <summary>
         /// Citirea din fisier (Obiecte de ingrijire)
         /// </summary>
-        public List<ObiectIngrijire> CitireDinFisierObiectDeIngrijire()
+        private List<ObiectIngrijire> CitireDinFisierObiectDeIngrijire()
         {
             var result = new List<ObiectIngrijire>();
             IEnumerable<string> lines = File.ReadLines(Constante.FisierObiecteDeIngrijire);
@@ -448,11 +448,11 @@ namespace Model
             return result;
         }
 
-        private List<Animal> CitireDinFisierAnimale()
+
         /// <summary>
         /// Citirea din fisier (Animale)
         /// </summary>
-        public List<Animal> CitireDinFisierAnimale()
+        private List<Animal> CitireDinFisierAnimale()
         {
             var result = new List<Animal>();
             IEnumerable<string> lines = File.ReadLines(Constante.FisierAnimale);
@@ -474,11 +474,11 @@ namespace Model
             return result;
         }
 
-        private List<Hrana> CitireDinFisierHrana()
+        
         /// <summary>
         /// Citirea din fisier (Hrana)
         /// </summary>
-        public List<Hrana> CitireDinFisierHrana()
+        private List<Hrana> CitireDinFisierHrana()
         {
             var result = new List<Hrana>();
             IEnumerable<string> lines = File.ReadLines(Constante.FisierHrana);
@@ -500,11 +500,11 @@ namespace Model
             return result;
         }
 
-        private List<Jucarie> CitireDinFisierJucarii()
+        
         /// <summary>
         /// Citirea din fisier (Jucarii)
         /// </summary>
-        public List<Jucarie> CitireDinFisierJucarii()
+        private List<Jucarie> CitireDinFisierJucarii()
         {
             var result = new List<Jucarie>();
             IEnumerable<string> lines = File.ReadLines(Constante.FisierJucarii);
