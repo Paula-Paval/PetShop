@@ -373,6 +373,7 @@ namespace Model
         /// <summary>
         /// Conversia listei in string (Animale)
         /// </summary>
+        /// <returns>Returneaza daca s-a realizat cu succes</returns>
         private string ConvertListOfAnimalsToString()
         {
             var result = "";
@@ -386,6 +387,7 @@ namespace Model
         /// <summary>
         /// Conversia listei in string (Obiecte de ingrijire)
         /// </summary>
+        /// <returns>Returneaza daca s-a realizat cu succes</returns>
         private string ConvertListOfObiecteToString()
         {
             var result = "";
@@ -399,6 +401,7 @@ namespace Model
         /// <summary>
         /// Conversia listei in string (Hrana)
         /// </summary>
+        /// <returns>Returneaza daca s-a realizat cu succes</returns>
         private string ConvertListOfHranaToString()
         {
             var result = "";
@@ -412,6 +415,7 @@ namespace Model
         /// <summary>
         /// Conversia listei in string (Jucarii)
         /// </summary>
+        /// <returns>Returneaza daca s-a realizat cu succes</returns>
         private string ConvertListOfJucariiToString()
         {
             var result = "";
@@ -425,6 +429,7 @@ namespace Model
         /// <summary>
         /// Citirea din fisier (Obiecte de ingrijire)
         /// </summary>
+        /// <returns>Returneaza daca s-a realizat cu succes</returns>
         private List<ObiectIngrijire> CitireDinFisierObiectDeIngrijire()
         {
             var result = new List<ObiectIngrijire>();
@@ -452,6 +457,7 @@ namespace Model
         /// <summary>
         /// Citirea din fisier (Animale)
         /// </summary>
+        /// <returns>Returneaza daca s-a realizat cu succes</returns>
         private List<Animal> CitireDinFisierAnimale()
         {
             var result = new List<Animal>();
@@ -474,10 +480,11 @@ namespace Model
             return result;
         }
 
-        
+
         /// <summary>
         /// Citirea din fisier (Hrana)
         /// </summary>
+        /// <returns>Returneaza daca s-a realizat cu succes</returns>
         private List<Hrana> CitireDinFisierHrana()
         {
             var result = new List<Hrana>();
@@ -500,10 +507,11 @@ namespace Model
             return result;
         }
 
-        
+
         /// <summary>
         /// Citirea din fisier (Jucarii)
         /// </summary>
+        /// <returns>Returneaza daca s-a realizat cu succes</returns>
         private List<Jucarie> CitireDinFisierJucarii()
         {
             var result = new List<Jucarie>();
