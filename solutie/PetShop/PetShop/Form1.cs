@@ -416,7 +416,7 @@ namespace PetShop
             var denumire = textBoxCumparare.Text;
             try
             {
-                switch (comboBoxTipStergere.SelectedItem)
+                switch (comboBoxTipCumparare.SelectedItem)
                 {
                     case Categorii.animal:
                         if (!_presenter.Cumpara(Constante.Animal, denumire))
