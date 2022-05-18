@@ -279,34 +279,82 @@ namespace Model
                     return false;
             }
         }
+
+        /// <summary>
+        /// SetAnimals
+        /// </summary>
+        /// <param name="animals" >Parametru de tip List<Animal> </param>
         public void SetAnimals(List<Animal> animals)
         {
             _animale = animals;
         }
+
+        /// <summary>
+        /// SetAnimals
+        /// </summary>
+        /// <param name="jucarii" >Parametru de tip List<Jucarie> </param>
+
         public void SetJucarii(List<Jucarie> jucarii)
         {
             _jucarii = jucarii;
         }
+
+        /// <summary>
+        /// SetAnimals
+        /// </summary>
+        /// <param name="obiectIngrijire" >Parametru de tip List<ObiectIngrijire>> </param>
+
         public void SetObiecteIngrijire(List<ObiectIngrijire> obiectIngrijire)
         {
             _obiecteIngrijire = obiectIngrijire;
         }
+
+        /// <summary>
+        /// SetAnimals
+        /// </summary>
+        /// <param name="hrana" >Parametru de tip List<Hrana>> </param>
+
         public void SetHrana(List<Hrana> hrana)
         {
             _hrana = hrana;
         }
+
+
+        /// <summary>
+        /// GetAnimals
+        /// </summary>
+        /// <returns>Returneaza obiectele de tip animale</returns>
+        
         public List<Animal> GetAnimals()
         {
             return _animale;
         }
+
+        /// <summary>
+        /// GetJucarii
+        /// </summary>
+        /// <returns>Returneaza obiectele de tip jucarii</returns>
+
         public List<Jucarie> GetJucarii()
         {
             return _jucarii;
         }
+
+        /// <summary>
+        /// GetObiecteIngrijire
+        /// </summary>
+        /// <returns>Returneaza obiectele de tip Obiecte de Ingrijire</returns>
+
         public List<ObiectIngrijire> GetObiecteIngrijire()
         {
             return _obiecteIngrijire;
         }
+
+        /// <summary>
+        /// GetHrana
+        /// </summary>
+        /// <returns>Returneaza obiectele de tip Hrana</returns>
+
         public List<Hrana> GetHrana()
         {
             return _hrana;

@@ -60,6 +60,7 @@ namespace PetShop
             this.textBoxId = new System.Windows.Forms.TextBox();
             this.groupBoxOptiuni = new System.Windows.Forms.GroupBox();
             this.groupBoxUser = new System.Windows.Forms.GroupBox();
+            this.denumireProdusCumparat = new System.Windows.Forms.Label();
             this.labelTipCumparare = new System.Windows.Forms.Label();
             this.comboBoxTipCumparare = new System.Windows.Forms.ComboBox();
             this.buttonCumpara = new System.Windows.Forms.Button();
@@ -73,9 +74,9 @@ namespace PetShop
             this.textBoxIdDeSters = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.buttonHelp = new System.Windows.Forms.Button();
             this.buttonAbout = new System.Windows.Forms.Button();
-            this.denumireProdusCumparat = new System.Windows.Forms.Label();
+            this.buttonHelpUtilizator = new System.Windows.Forms.Button();
+            this.buttonHelpProgramator = new System.Windows.Forms.Button();
             this.groupBoxAdaugare.SuspendLayout();
             this.groupBoxJucarii.SuspendLayout();
             this.groupBoxHrana.SuspendLayout();
@@ -387,6 +388,15 @@ namespace PetShop
             this.groupBoxUser.TabStop = false;
             this.groupBoxUser.Text = "Cumparare";
             // 
+            // denumireProdusCumparat
+            // 
+            this.denumireProdusCumparat.AutoSize = true;
+            this.denumireProdusCumparat.Location = new System.Drawing.Point(13, 69);
+            this.denumireProdusCumparat.Name = "denumireProdusCumparat";
+            this.denumireProdusCumparat.Size = new System.Drawing.Size(69, 17);
+            this.denumireProdusCumparat.TabIndex = 6;
+            this.denumireProdusCumparat.Text = "Denumire";
+            // 
             // labelTipCumparare
             // 
             this.labelTipCumparare.AutoSize = true;
@@ -502,40 +512,42 @@ namespace PetShop
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.buttonHelpProgramator);
             this.groupBox1.Controls.Add(this.buttonAbout);
-            this.groupBox1.Controls.Add(this.buttonHelp);
+            this.groupBox1.Controls.Add(this.buttonHelpUtilizator);
             this.groupBox1.Location = new System.Drawing.Point(1112, 547);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(174, 182);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             // 
-            // buttonHelp
-            // 
-            this.buttonHelp.Location = new System.Drawing.Point(16, 23);
-            this.buttonHelp.Name = "buttonHelp";
-            this.buttonHelp.Size = new System.Drawing.Size(146, 50);
-            this.buttonHelp.TabIndex = 5;
-            this.buttonHelp.Text = "Help";
-            this.buttonHelp.UseVisualStyleBackColor = true;
-            // 
             // buttonAbout
             // 
-            this.buttonAbout.Location = new System.Drawing.Point(16, 96);
+            this.buttonAbout.Location = new System.Drawing.Point(14, 126);
             this.buttonAbout.Name = "buttonAbout";
             this.buttonAbout.Size = new System.Drawing.Size(146, 50);
             this.buttonAbout.TabIndex = 6;
             this.buttonAbout.Text = "Despre";
             this.buttonAbout.UseVisualStyleBackColor = true;
             this.buttonAbout.Click += new System.EventHandler(this.buttonAbout_Click);
-            // denumireProdusCumparat
             // 
-            this.denumireProdusCumparat.AutoSize = true;
-            this.denumireProdusCumparat.Location = new System.Drawing.Point(13, 69);
-            this.denumireProdusCumparat.Name = "denumireProdusCumparat";
-            this.denumireProdusCumparat.Size = new System.Drawing.Size(69, 17);
-            this.denumireProdusCumparat.TabIndex = 6;
-            this.denumireProdusCumparat.Text = "Denumire";
+            // buttonHelpUtilizator
+            // 
+            this.buttonHelpUtilizator.Location = new System.Drawing.Point(14, 11);
+            this.buttonHelpUtilizator.Name = "buttonHelpUtilizator";
+            this.buttonHelpUtilizator.Size = new System.Drawing.Size(146, 50);
+            this.buttonHelpUtilizator.TabIndex = 5;
+            this.buttonHelpUtilizator.Text = "Help utilizator";
+            this.buttonHelpUtilizator.UseVisualStyleBackColor = true;
+            // 
+            // buttonHelpProgramator
+            // 
+            this.buttonHelpProgramator.Location = new System.Drawing.Point(14, 69);
+            this.buttonHelpProgramator.Name = "buttonHelpProgramator";
+            this.buttonHelpProgramator.Size = new System.Drawing.Size(146, 50);
+            this.buttonHelpProgramator.TabIndex = 7;
+            this.buttonHelpProgramator.Text = "Help programator";
+            this.buttonHelpProgramator.UseVisualStyleBackColor = true;
             // 
             // FormPetShop
             // 
@@ -619,8 +631,9 @@ namespace PetShop
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button buttonAbout;
-        private System.Windows.Forms.Button buttonHelp;
+        private System.Windows.Forms.Button buttonHelpUtilizator;
         private System.Windows.Forms.Label denumireProdusCumparat;
+        private System.Windows.Forms.Button buttonHelpProgramator;
     }
 }
 

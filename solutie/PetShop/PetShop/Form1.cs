@@ -1,4 +1,13 @@
-﻿using Commons;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        Form1.cs                                             *
+ *  Copyright:   (c) 2022, PetShop                                        *
+ *  E-mail:      paula.paval@student.tuiasi.ro                            *
+ *  Description:                                                          *
+ *                                                                        *
+ *                                                                        *
+ **************************************************************************/
+using Commons;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,6 +32,9 @@ namespace PetShop
 
         private List<MenuOption> _menuOptions;
 
+        /// <summary>
+        /// Enumaram Categoriile
+        /// </summary>
         public enum Categorii
         {
             animal,
@@ -31,6 +43,10 @@ namespace PetShop
             jucarie,
 
         }
+
+        /// <summary>
+        /// Enumaram speciile de animale
+        /// </summary>
         public enum Specii
         {
             caine,
@@ -38,6 +54,9 @@ namespace PetShop
 
         }
 
+        /// <summary>
+        /// Enumaram Categoriile de obiecte de ingrijire
+        /// </summary>
         public enum CategorieObiecte
         {
             perie,
@@ -45,7 +64,9 @@ namespace PetShop
             bol,
 
         }
-
+        /// <summary>
+        /// Enumaram Categoriile de hrana 
+        /// </summary>
         public enum CategorieHrana
         {
             hranaUmedaCaini,
