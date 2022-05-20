@@ -1,0 +1,5 @@
+E:\PetShop\solutie\PetShop\Commons\bin\Debug\Commons.dll
+E:\PetShop\solutie\PetShop\Commons\bin\Debug\Commons.pdb
+E:\PetShop\solutie\PetShop\Commons\obj\Debug\Commons.csproj.CoreCompileInputs.cache
+E:\PetShop\solutie\PetShop\Commons\obj\Debug\Commons.dll
+E:\PetShop\solutie\PetShop\Commons\obj\Debug\Commons.pdb

@@ -1,0 +1,9 @@
+E:\PetShop\solutie\PetShop\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+E:\PetShop\solutie\PetShop\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\PetShop\solutie\PetShop\Model\bin\Debug\Model.dll
+E:\PetShop\solutie\PetShop\Model\bin\Debug\Model.pdb
+E:\PetShop\solutie\PetShop\Model\bin\Debug\Commons.dll
+E:\PetShop\solutie\PetShop\Model\bin\Debug\Commons.pdb
+E:\PetShop\solutie\PetShop\Model\obj\Debug\Model.csproj.CopyComplete
+E:\PetShop\solutie\PetShop\Model\obj\Debug\Model.dll
+E:\PetShop\solutie\PetShop\Model\obj\Debug\Model.pdb

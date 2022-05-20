@@ -1,0 +1,17 @@
+E:\PetShop\solutie\PetShop\PetShop\obj\Debug\PetShop.FormPetShop.resources
+E:\PetShop\solutie\PetShop\PetShop\obj\Debug\PetShop.Properties.Resources.resources
+E:\PetShop\solutie\PetShop\PetShop\obj\Debug\PetShop.csproj.GenerateResource.cache
+E:\PetShop\solutie\PetShop\PetShop\obj\Debug\PetShop.csproj.CoreCompileInputs.cache
+E:\PetShop\solutie\PetShop\PetShop\obj\Debug\PetShop.csproj.AssemblyReference.cache
+E:\PetShop\solutie\PetShop\PetShop\bin\Debug\PetShop.exe.config
+E:\PetShop\solutie\PetShop\PetShop\bin\Debug\PetShop.exe
+E:\PetShop\solutie\PetShop\PetShop\bin\Debug\PetShop.pdb
+E:\PetShop\solutie\PetShop\PetShop\bin\Debug\Commons.dll
+E:\PetShop\solutie\PetShop\PetShop\bin\Debug\Presenter.dll
+E:\PetShop\solutie\PetShop\PetShop\bin\Debug\Model.dll
+E:\PetShop\solutie\PetShop\PetShop\bin\Debug\Commons.pdb
+E:\PetShop\solutie\PetShop\PetShop\bin\Debug\Presenter.pdb
+E:\PetShop\solutie\PetShop\PetShop\bin\Debug\Model.pdb
+E:\PetShop\solutie\PetShop\PetShop\obj\Debug\PetShop.csproj.CopyComplete
+E:\PetShop\solutie\PetShop\PetShop\obj\Debug\PetShop.exe
+E:\PetShop\solutie\PetShop\PetShop\obj\Debug\PetShop.pdb

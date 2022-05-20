@@ -1,0 +1,11 @@
+E:\PetShop\solutie\PetShop\Presenter\obj\Debug\Presenter.csproj.AssemblyReference.cache
+E:\PetShop\solutie\PetShop\Presenter\obj\Debug\Presenter.csproj.CoreCompileInputs.cache
+E:\PetShop\solutie\PetShop\Presenter\bin\Debug\Presenter.dll
+E:\PetShop\solutie\PetShop\Presenter\bin\Debug\Presenter.pdb
+E:\PetShop\solutie\PetShop\Presenter\bin\Debug\Commons.dll
+E:\PetShop\solutie\PetShop\Presenter\bin\Debug\Model.dll
+E:\PetShop\solutie\PetShop\Presenter\bin\Debug\Commons.pdb
+E:\PetShop\solutie\PetShop\Presenter\bin\Debug\Model.pdb
+E:\PetShop\solutie\PetShop\Presenter\obj\Debug\Presenter.csproj.CopyComplete
+E:\PetShop\solutie\PetShop\Presenter\obj\Debug\Presenter.dll
+E:\PetShop\solutie\PetShop\Presenter\obj\Debug\Presenter.pdb
