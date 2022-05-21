@@ -3,8 +3,8 @@
  *  File:        IView.cs                                             *
  *  Copyright:   (c) 2022, PetShop                                        *
  *  E-mail:      paula.paval@student.tuiasi.ro                            *
- *  Description:                                                          *
- *                                                                        *
+ *  Description: Interfata ce contine operatiile view-ului, punctul       *
+ *              din interfata ce comunica cu utilizatorul                 *
  *                                                                        *
  **************************************************************************/
 
@@ -21,6 +21,10 @@ namespace Commons
     /// </summary>
     public interface IView
     {
+        /// <summary>
+        /// Set Presenter
+        /// </summary>
+        /// <param name="presenter">Obiect de ti IPrsenter</param>
         void SetPresenter(IPresenter presenter);
 
     }

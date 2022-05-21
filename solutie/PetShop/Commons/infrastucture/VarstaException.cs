@@ -21,6 +21,9 @@ namespace Commons.infrastucture
     /// </summary>
     public class VarstaException : Exception
     {
+        /// <summary>
+        /// Mesajul exceptiei
+        /// </summary>
         public string Message { get; }
 
         /// <summary>

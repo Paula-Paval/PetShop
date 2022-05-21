@@ -3,8 +3,8 @@
  *  File:        IPresenter.cs                                             *
  *  Copyright:   (c) 2022, PetShop                                        *
  *  E-mail:      paula.paval@student.tuiasi.ro                            *
- *  Description:                                                          *
- *                                                                        *
+ *  Description: Interfata ce contine operatiile pe care le poate realiza *
+ *               presenter-ul, punctul din aplicatie ce leaga modelul de view *
  *                                                                        *
  **************************************************************************/
 

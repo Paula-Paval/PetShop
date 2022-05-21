@@ -238,7 +238,7 @@ namespace PetShop
             this.labelDenumireObiectDeIngrijire.Size = new System.Drawing.Size(69, 17);
             this.labelDenumireObiectDeIngrijire.TabIndex = 3;
             this.labelDenumireObiectDeIngrijire.Text = "Denumire";
-            this.labelDenumireObiectDeIngrijire.Click += new System.EventHandler(this.label1_Click_1);
+           
             // 
             // labelCategorieObiectDeIngrijire
             // 
@@ -255,7 +255,7 @@ namespace PetShop
             this.textBoxDenumireObiect.Name = "textBoxDenumireObiect";
             this.textBoxDenumireObiect.Size = new System.Drawing.Size(135, 22);
             this.textBoxDenumireObiect.TabIndex = 1;
-            this.textBoxDenumireObiect.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+          
             // 
             // comboBoxCategorieIngrijire
             // 
@@ -310,7 +310,7 @@ namespace PetShop
             this.comboBoxSpecie.Name = "comboBoxSpecie";
             this.comboBoxSpecie.Size = new System.Drawing.Size(124, 24);
             this.comboBoxSpecie.TabIndex = 8;
-            this.comboBoxSpecie.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+           
             // 
             // labelPret
             // 
@@ -338,7 +338,7 @@ namespace PetShop
             this.labelTip.Size = new System.Drawing.Size(28, 17);
             this.labelTip.TabIndex = 3;
             this.labelTip.Text = "Tip";
-            this.labelTip.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // comboBoxCategorii
             // 

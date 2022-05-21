@@ -3,9 +3,9 @@
  *  File:        Form1.cs                                             *
  *  Copyright:   (c) 2022, PetShop                                        *
  *  E-mail:      paula.paval@student.tuiasi.ro                            *
- *  Description:                                                          *
- *                                                                        *
- *                                                                        *
+ *  Description: Punctul din aplicatie cel mai aproape de utilizator      *
+ *               contine operatiile pe care le poate face utilizatorul    *
+ *               prin intermediul interfetei grafice                      *
  **************************************************************************/
 using Commons;
 using System;
@@ -28,8 +28,14 @@ namespace PetShop
     /// </summary>
     public partial class FormPetShop : Form, IView
     {
+        /// <summary>
+        /// Presenter-ul
+        /// </summary>
         private IPresenter _presenter;
 
+        /// <summary>
+        /// Lista de optiuni
+        /// </summary>
         private List<MenuOption> _menuOptions;
 
         /// <summary>
@@ -120,25 +126,7 @@ namespace PetShop
                 MessageBox.Show($"{ex.Message}");
             }
         }
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
+     
 
         /// <summary>
         /// Lista meniu

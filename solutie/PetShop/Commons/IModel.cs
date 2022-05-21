@@ -3,9 +3,9 @@
  *  File:        IModel.cs                                             *
  *  Copyright:   (c) 2022, PetShop                                        *
  *  E-mail:      paula.paval@student.tuiasi.ro                            *
- *  Description:                                                          *
- *                                                                        *
- *                                                                        *
+ *  Description:   Interfata ce contine operatiile pe care le poate       *
+ *               realiza  modelul, reprezinta contractul punctului din    *
+ *               aplicatie cel mai aproape de nivelul de persistenta al datelor *
  **************************************************************************/
 
 using System;

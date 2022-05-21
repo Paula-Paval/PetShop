@@ -3,7 +3,8 @@
  *  File:        Model.cs                                             *
  *  Copyright:   (c) 2022, PetShop                                        *
  *  E-mail:      paula.paval@student.tuiasi.ro                            *
- *  Description:                                                          *
+ *  Description: Punctului din  aplicatie cel mai aproape de nivelul      *
+ *               de persistenta al datelor (datele sunt salvate in fisiere)*
  *                                                                        *
  *                                                                        *
  **************************************************************************/

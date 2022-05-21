@@ -3,7 +3,7 @@
  *  File:        Presenter.cs                                             *
  *  Copyright:   (c) 2022, PetShop                                        *
  *  E-mail:      paula.paval@student.tuiasi.ro                            *
- *  Description:                                                          *
+ *  Description:  Punct din aplicatie ce leaga modelul si view-ul         *
  *                                                                        *
  *                                                                        *
  **************************************************************************/

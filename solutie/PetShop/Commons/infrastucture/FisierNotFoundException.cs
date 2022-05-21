@@ -21,6 +21,10 @@ namespace Commons.infrastucture
     /// </summary>
     public class FisierNotFoundException : Exception
     {
+
+        /// <summary>
+        /// Mesajul exceptiei
+        /// </summary>
         public string Message { get; }
 
         /// <summary>

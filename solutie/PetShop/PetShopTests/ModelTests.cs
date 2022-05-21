@@ -23,6 +23,9 @@ namespace PetShopTests
     [TestClass]
     public class ModelTests
     {
+        /// <summary>
+        /// Obiect de tip IModel
+        /// </summary>
         private IModel _model;
 
         /// <summary>
