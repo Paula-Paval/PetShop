@@ -32,7 +32,7 @@ namespace Commons.infrastucture
         /// <param name="message">Mesaj de tip string/param>
         public IdNegativExcetion(string message)
         {
-            Message = $"{message}";
+            Message = message.ToString();
         }
     }
 }

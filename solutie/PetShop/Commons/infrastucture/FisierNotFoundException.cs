@@ -33,7 +33,7 @@ namespace Commons.infrastucture
         /// <param name="message">Mesaj de tip string/param>
         public FisierNotFoundException(string message)
         {
-            Message = $"{message}";
+            Message = message.ToString();
         }
 
     }

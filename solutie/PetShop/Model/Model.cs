@@ -36,7 +36,7 @@ namespace Model
         /// <param name="produs">Obiect de tip Animal</param>
         public void AddAnimal(Animal produs)
         {
-            if (!File.Exists(Constante.FisierAnimale)) throw new FisierNotFoundException($"Fisierul {Constante.FisierAnimale}");
+            if (!File.Exists(Constante.FisierAnimale)) throw new FisierNotFoundException("Fisierul "+Constante.FisierAnimale);
             if (produs.Id < 0) throw new IdNegativExcetion("Nu se poate realiza adaugarea unui produs cu id negativ");
             if (produs.Varsta < 0 || produs.Varsta > 60) throw new VarstaException("Nu se poate realiza adaugarea unui animal cu varsta negativa sau mai mare ca 50");
             if (produs.Pret < 0) throw new PretNegativException("Nu se poate adauga un produs cu pret negativ");
@@ -52,7 +52,7 @@ namespace Model
         /// <param name="produs">Obiect de tip ObiectIngrijire</param>
         public void AddObiecteIngrijire(ObiectIngrijire produs)
         {
-            if (!File.Exists(Constante.FisierObiecteDeIngrijire)) throw new FisierNotFoundException($"Fisierul {Constante.FisierObiecteDeIngrijire}");
+            if (!File.Exists(Constante.FisierObiecteDeIngrijire)) throw new FisierNotFoundException("Fisierul "+Constante.FisierObiecteDeIngrijire);
             if (produs.Id < 0) throw new IdNegativExcetion("Nu se poate realiza adaugarea unui produs cu id negativ");
             if (produs.Pret < 0) throw new PretNegativException("Nu se poate adauga un produs cu pret negativ");
             _obiecteIngrijire.Add(produs);
@@ -66,7 +66,7 @@ namespace Model
         /// /// <param name="produs">Obiect de tip Jucarie</param>
         public void AddJucarii(Jucarie produs)
         {
-            if (!File.Exists(Constante.FisierJucarii)) throw new FisierNotFoundException($"Fisierul {Constante.FisierJucarii}");
+            if (!File.Exists(Constante.FisierJucarii)) throw new FisierNotFoundException("Fisierul "+Constante.FisierJucarii);
             if (produs.Id < 0) throw new IdNegativExcetion("Nu se poate realiza adaugarea unui produs cu id negativ");
             if (produs.Pret < 0) throw new PretNegativException("Nu se poate adauga un produs cu pret negativ");
             _jucarii.Add(produs);
@@ -82,7 +82,7 @@ namespace Model
 
         public void AddHrana(Hrana produs)
         {
-            if (!File.Exists(Constante.FisierHrana)) throw new FisierNotFoundException($"Fisierul {Constante.FisierHrana}");
+            if (!File.Exists(Constante.FisierHrana)) throw new FisierNotFoundException("Fisierul "+ Constante.FisierHrana);
             if (produs.Id < 0) throw new IdNegativExcetion("Nu se poate realiza adaugarea unui produs cu id negativ");
             if (produs.Pret < 0) throw new PretNegativException("Nu se poate adauga un produs cu pret negativ");
             _hrana.Add(produs);
@@ -96,10 +96,10 @@ namespace Model
 
         public void InitializeData()
         {
-            if (!File.Exists(Constante.FisierAnimale)) throw new FisierNotFoundException($"Fisierul {Constante.FisierAnimale}");
-            if (!File.Exists(Constante.FisierHrana)) throw new FisierNotFoundException($"Fisierul {Constante.FisierHrana}");
-            if (!File.Exists(Constante.FisierJucarii)) throw new FisierNotFoundException($"Fisierul {Constante.FisierJucarii}");
-            if (!File.Exists(Constante.FisierObiecteDeIngrijire)) throw new FisierNotFoundException($"Fisierul {Constante.FisierObiecteDeIngrijire}");
+            if (!File.Exists(Constante.FisierAnimale)) throw new FisierNotFoundException("Fisierul "+Constante.FisierAnimale);
+            if (!File.Exists(Constante.FisierHrana)) throw new FisierNotFoundException("Fisierul "+Constante.FisierHrana);
+            if (!File.Exists(Constante.FisierJucarii)) throw new FisierNotFoundException("Fisierul "+ Constante.FisierJucarii);
+            if (!File.Exists(Constante.FisierObiecteDeIngrijire)) throw new FisierNotFoundException("Fisierul"+ Constante.FisierObiecteDeIngrijire);
 
             _animale = CitireDinFisierAnimale();
             _obiecteIngrijire = CitireDinFisierObiectDeIngrijire();
@@ -138,7 +138,7 @@ namespace Model
         public bool DeleteAnimal(int id)
         {
             if (id < 0) throw new IdNegativExcetion("Nu se poate realiza stergerea unui animal cu id negativ");
-            if (!File.Exists(Constante.FisierAnimale)) throw new FisierNotFoundException($"Fisierul {Constante.FisierAnimale}");
+            if (!File.Exists(Constante.FisierAnimale)) throw new FisierNotFoundException("Fisierul "+Constante.FisierAnimale);
 
             var animal = _animale.FirstOrDefault(x => x.Id == id);
 
@@ -160,7 +160,7 @@ namespace Model
         public bool DeleteObiectIngrijire(int id)
         {
             if (id < 0) throw new IdNegativExcetion("Nu se poate realiza stergerea unui obiect de ingrijire cu id negativ");
-            if (!File.Exists(Constante.FisierObiecteDeIngrijire)) throw new FisierNotFoundException($"Fisierul {Constante.FisierObiecteDeIngrijire}");
+            if (!File.Exists(Constante.FisierObiecteDeIngrijire)) throw new FisierNotFoundException("Fisierul "+Constante.FisierObiecteDeIngrijire);
 
             var obiect = _obiecteIngrijire.FirstOrDefault(x => x.Id == id);
 
@@ -184,7 +184,7 @@ namespace Model
         public bool DeleteJucarii(int id)
         {
             if (id < 0) throw new IdNegativExcetion("Nu se poate realiza stergerea unei jucarii cu id negativ");
-            if (!File.Exists(Constante.FisierJucarii)) throw new FisierNotFoundException($"Fisierul {Constante.FisierJucarii}");
+            if (!File.Exists(Constante.FisierJucarii)) throw new FisierNotFoundException("Fisierul "+Constante.FisierJucarii);
 
             var jucarie = _jucarii.FirstOrDefault(x => x.Id == id);
 
@@ -207,7 +207,7 @@ namespace Model
         public bool DeleteHrana(int id)
         {
             if (id < 0) throw new IdNegativExcetion("Nu se poate realiza stergerea hranei cu id negativ");
-            if (!File.Exists(Constante.FisierHrana)) throw new FisierNotFoundException($"Fisierul {Constante.FisierHrana}");
+            if (!File.Exists(Constante.FisierHrana)) throw new FisierNotFoundException("Fisierul "+Constante.FisierHrana);
 
             var hrana = _hrana.FirstOrDefault(x => x.Id == id);
 
@@ -371,7 +371,7 @@ namespace Model
 
             foreach (var item in _animale)
             {
-                stream.WriteLine($"{item.Id},{item.Pret},{item.Categorie},{item.Varsta}");
+                stream.WriteLine(item.Id+","+item.Pret+","+item.Categorie+","+item.Varsta);
 
             }
             stream.Close();
@@ -384,7 +384,7 @@ namespace Model
             var stream = new StreamWriter(Constante.FisierObiecteDeIngrijire);
             foreach (var item in _obiecteIngrijire)
             {
-                stream.WriteLine($"{item.Id},{item.Pret},{item.Categorie},{item.Denumire}");
+                stream.WriteLine(item.Id.ToString()+","+item.Pret+","+item.Categorie+","+item.Denumire);
 
             }
             stream.Close();
@@ -399,7 +399,7 @@ namespace Model
             var stream = new StreamWriter(Constante.FisierJucarii);
             foreach (var item in _jucarii)
             {
-                stream.WriteLine($"{item.Id},{item.Pret},{item.Denumire}");
+                stream.WriteLine(item.Id.ToString()+","+item.Pret.ToString()+","+item.Denumire);
 
             }
             stream.Close();
@@ -413,7 +413,7 @@ namespace Model
             var stream = new StreamWriter(Constante.FisierHrana);
             foreach (var item in _hrana)
             {
-                stream.WriteLine($"{item.Id},{item.Pret},{item.Categorie},{item.Denumire}");
+                stream.WriteLine(item.Id.ToString()+","+item.Pret+","+item.Categorie+","+item.Denumire);
 
             }
             stream.Close();
@@ -428,7 +428,7 @@ namespace Model
             var result = "";
             foreach (var item in _animale)
             {
-                result += $"{item.Id},{item.Pret},{item.Categorie},{item.Varsta}\n";
+                result += item.Id.ToString()+","+item.Pret.ToString()+","+item.Categorie+","+item.Varsta+"\n";
             }
             return result;
         }
@@ -442,7 +442,7 @@ namespace Model
             var result = "";
             foreach (var item in _obiecteIngrijire)
             {
-                result += $"{ item.Id},{ item.Pret},{ item.Categorie},{ item.Denumire}\n";
+                result +=  item.Id.ToString()+"," +item.Pret.ToString()+","+ item.Categorie.ToString()+","+ item.Denumire.ToString()+"\n";
             }
             return result;
         }
@@ -456,7 +456,7 @@ namespace Model
             var result = "";
             foreach (var item in _hrana)
             {
-                result += $"{item.Id},{item.Pret},{item.Categorie},{item.Denumire}\n";
+                result += item.Id.ToString()+","+item.Pret.ToString()+","+item.Categorie.ToString()+","+item.Denumire.ToString()+"\n";
             }
             return result;
         }
@@ -470,7 +470,7 @@ namespace Model
             var result = "";
             foreach (var item in _hrana)
             {
-                result += $"{item.Id},{item.Pret},{item.Denumire}\n";
+                result += item.Id.ToString()+","+item.Pret.ToString()+","+item.Denumire.ToString()+"\n";
             }
             return result;
         }

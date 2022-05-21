@@ -119,11 +119,11 @@ namespace PetShop
             }
             catch (FisierNotFoundException ex)
             {
-                MessageBox.Show($"{ex.Message}");
+                MessageBox.Show(ex.Message);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"{ex.Message}");
+                MessageBox.Show(ex.Message);
             }
         }
      
@@ -263,23 +263,23 @@ namespace PetShop
                 }
                 catch (FisierNotFoundException ex)
                 {
-                    MessageBox.Show($"{ex.Message}");
+                    MessageBox.Show(ex.Message);
                 }
                 catch (IdNegativExcetion ex)
                 {
-                    MessageBox.Show($"{ex.Message}");
+                    MessageBox.Show(ex.Message);
                 }
                 catch (PretNegativException ex)
                 {
-                    MessageBox.Show($"{ex.Message}");
+                    MessageBox.Show(ex.Message);
                 }
                 catch (VarstaException ex)
                 {
-                    MessageBox.Show($"{ex.Message}");
+                    MessageBox.Show(ex.Message);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"{ex.Message}");
+                    MessageBox.Show(ex.Message);
                 }
 
             }
@@ -301,19 +301,19 @@ namespace PetShop
                 }
                 catch (FisierNotFoundException ex)
                 {
-                    MessageBox.Show($"{ex.Message}");
+                    MessageBox.Show(ex.Message);
                 }
                 catch (IdNegativExcetion ex)
                 {
-                    MessageBox.Show($"{ex.Message}");
+                    MessageBox.Show(ex.Message);
                 }
                 catch (PretNegativException ex)
                 {
-                    MessageBox.Show($"{ex.Message}");
+                    MessageBox.Show(ex.Message);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"{ex.Message}");
+                    MessageBox.Show(ex.Message);
                 }
             }
 
@@ -334,19 +334,19 @@ namespace PetShop
                 }
                 catch (FisierNotFoundException ex)
                 {
-                    MessageBox.Show($"{ex.Message}");
+                    MessageBox.Show(ex.Message);
                 }
                 catch (IdNegativExcetion ex)
                 {
-                    MessageBox.Show($"{ex.Message}");
+                    MessageBox.Show(ex.Message);
                 }
                 catch (PretNegativException ex)
                 {
-                    MessageBox.Show($"{ex.Message}");
+                    MessageBox.Show(ex.Message);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"{ex.Message}");
+                    MessageBox.Show(ex.Message);
                 }
             }
 
@@ -366,19 +366,19 @@ namespace PetShop
                 }
                 catch (FisierNotFoundException ex)
                 {
-                    MessageBox.Show($"{ex.Message}");
+                    MessageBox.Show(ex.Message);
                 }
                 catch (IdNegativExcetion ex)
                 {
-                    MessageBox.Show($"{ex.Message}");
+                    MessageBox.Show(ex.Message);
                 }
                 catch (PretNegativException ex)
                 {
-                    MessageBox.Show($"{ex.Message}");
+                    MessageBox.Show(ex.Message);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"{ex.Message}");
+                    MessageBox.Show(ex.Message);
                 }
             }
         }
@@ -442,15 +442,15 @@ namespace PetShop
             }
             catch (FisierNotFoundException ex)
             {
-                MessageBox.Show($"{ex.Message}");
+                MessageBox.Show(ex.Message);
             }
             catch (IdNegativExcetion ex)
             {
-                MessageBox.Show($"{ex.Message}");
+                MessageBox.Show(ex.Message);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"{ex.Message}");
+                MessageBox.Show(ex.Message);
             }
 
 
@@ -513,15 +513,15 @@ namespace PetShop
             }
             catch (FisierNotFoundException ex)
             {
-                MessageBox.Show($"{ex.Message}");
+                MessageBox.Show(ex.Message);
             }
             catch (IdNegativExcetion ex)
             {
-                MessageBox.Show($"{ex.Message}");
+                MessageBox.Show(ex.Message);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"{ex.Message}");
+                MessageBox.Show(ex.Message);
             }
         }
 
