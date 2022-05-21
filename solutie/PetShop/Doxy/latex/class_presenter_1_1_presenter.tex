@@ -1,0 +1,228 @@
+\doxysection{Presenter.\+Presenter Class Reference}
+\label{class_presenter_1_1_presenter}\index{Presenter.Presenter@{Presenter.Presenter}}
+
+
+Clasa prezentator  
+
+
+Inheritance diagram for Presenter.\+Presenter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_presenter_1_1_presenter}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_presenter_1_1_presenter_a74b0861325d2338ca3b8b0f80b4956f9}} 
+{\bfseries Presenter} ()
+\begin{DoxyCompactList}\small\item\em Constructor \end{DoxyCompactList}\item 
+void \textbf{ Add\+Animal} (\textbf{ Animal} p)
+\begin{DoxyCompactList}\small\item\em Adaugare animal \end{DoxyCompactList}\item 
+void \textbf{ Add\+Obiecte\+Ingrijire} (\textbf{ Obiect\+Ingrijire} p)
+\begin{DoxyCompactList}\small\item\em Adaugare obiecte de ingrijire \end{DoxyCompactList}\item 
+void \textbf{ Add\+Jucarii} (\textbf{ Jucarie} p)
+\begin{DoxyCompactList}\small\item\em Adaugare jucarii \end{DoxyCompactList}\item 
+void \textbf{ Add\+Hrana} (\textbf{ Hrana} p)
+\begin{DoxyCompactList}\small\item\em Adaugare hrana \end{DoxyCompactList}\item 
+void \textbf{ Init} ()
+\begin{DoxyCompactList}\small\item\em Initializare \end{DoxyCompactList}\item 
+bool \textbf{ Produs\+Exists} (string tip, string denumire)
+\begin{DoxyCompactList}\small\item\em Existenta produs \end{DoxyCompactList}\item 
+bool \textbf{ Remove\+Produs} (int id, string tip)
+\begin{DoxyCompactList}\small\item\em stergerea unui produs \end{DoxyCompactList}\item 
+string \textbf{ List} (string tip)
+\begin{DoxyCompactList}\small\item\em Lista \end{DoxyCompactList}\item 
+bool \textbf{ Cumpara} (string tip, string denumire)
+\begin{DoxyCompactList}\small\item\em Cumpararea unui produs \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clasa prezentator 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{class_presenter_1_1_presenter_a51fbb8d206a684fd36500a984f23f976}} 
+\index{Presenter.Presenter@{Presenter.Presenter}!AddAnimal@{AddAnimal}}
+\index{AddAnimal@{AddAnimal}!Presenter.Presenter@{Presenter.Presenter}}
+\doxysubsubsection{AddAnimal()}
+{\footnotesize\ttfamily void Presenter.\+Presenter.\+Add\+Animal (\begin{DoxyParamCaption}\item[{\textbf{ Animal}}]{p }\end{DoxyParamCaption})}
+
+
+
+Adaugare animal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Obiect de tip Animal\\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ Commons.\+IPresenter} \doxyref{}{p.}{interface_commons_1_1_i_presenter}.
+
+\mbox{\label{class_presenter_1_1_presenter_ab27a54dd13dced37b736335e5a51b1d8}} 
+\index{Presenter.Presenter@{Presenter.Presenter}!AddHrana@{AddHrana}}
+\index{AddHrana@{AddHrana}!Presenter.Presenter@{Presenter.Presenter}}
+\doxysubsubsection{AddHrana()}
+{\footnotesize\ttfamily void Presenter.\+Presenter.\+Add\+Hrana (\begin{DoxyParamCaption}\item[{\textbf{ Hrana}}]{p }\end{DoxyParamCaption})}
+
+
+
+Adaugare hrana 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Obiect de tip Hrana\\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ Commons.\+IPresenter} \doxyref{}{p.}{interface_commons_1_1_i_presenter}.
+
+\mbox{\label{class_presenter_1_1_presenter_af30fa57b82c80437077ab072d89de052}} 
+\index{Presenter.Presenter@{Presenter.Presenter}!AddJucarii@{AddJucarii}}
+\index{AddJucarii@{AddJucarii}!Presenter.Presenter@{Presenter.Presenter}}
+\doxysubsubsection{AddJucarii()}
+{\footnotesize\ttfamily void Presenter.\+Presenter.\+Add\+Jucarii (\begin{DoxyParamCaption}\item[{\textbf{ Jucarie}}]{p }\end{DoxyParamCaption})}
+
+
+
+Adaugare jucarii 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Obiect de tip Jucarie\\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ Commons.\+IPresenter} \doxyref{}{p.}{interface_commons_1_1_i_presenter}.
+
+\mbox{\label{class_presenter_1_1_presenter_a59b5080cb4c71de21742978e774a2a90}} 
+\index{Presenter.Presenter@{Presenter.Presenter}!AddObiecteIngrijire@{AddObiecteIngrijire}}
+\index{AddObiecteIngrijire@{AddObiecteIngrijire}!Presenter.Presenter@{Presenter.Presenter}}
+\doxysubsubsection{AddObiecteIngrijire()}
+{\footnotesize\ttfamily void Presenter.\+Presenter.\+Add\+Obiecte\+Ingrijire (\begin{DoxyParamCaption}\item[{\textbf{ Obiect\+Ingrijire}}]{p }\end{DoxyParamCaption})}
+
+
+
+Adaugare obiecte de ingrijire 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Obiect de tip Obiect\+Ingrijire\\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ Commons.\+IPresenter} \doxyref{}{p.}{interface_commons_1_1_i_presenter}.
+
+\mbox{\label{class_presenter_1_1_presenter_ad21fcf7141161738b1a39f65ac02553c}} 
+\index{Presenter.Presenter@{Presenter.Presenter}!Cumpara@{Cumpara}}
+\index{Cumpara@{Cumpara}!Presenter.Presenter@{Presenter.Presenter}}
+\doxysubsubsection{Cumpara()}
+{\footnotesize\ttfamily bool Presenter.\+Presenter.\+Cumpara (\begin{DoxyParamCaption}\item[{string}]{tip,  }\item[{string}]{denumire }\end{DoxyParamCaption})}
+
+
+
+Cumpararea unui produs 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tip} & Tipul produsului cumparat\\
+\hline
+{\em denumire} & Denumirea produsului cumparat\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returneaza produsul cumparat
+\end{DoxyReturn}
+
+
+Implements \textbf{ Commons.\+IPresenter} \doxyref{}{p.}{interface_commons_1_1_i_presenter}.
+
+\mbox{\label{class_presenter_1_1_presenter_a27206704bff6aa0acd981e09515df462}} 
+\index{Presenter.Presenter@{Presenter.Presenter}!Init@{Init}}
+\index{Init@{Init}!Presenter.Presenter@{Presenter.Presenter}}
+\doxysubsubsection{Init()}
+{\footnotesize\ttfamily void Presenter.\+Presenter.\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializare 
+
+
+
+Implements \textbf{ Commons.\+IPresenter} \doxyref{}{p.}{interface_commons_1_1_i_presenter}.
+
+\mbox{\label{class_presenter_1_1_presenter_a1bb860b1139f8a7ee17906e70f3e9d23}} 
+\index{Presenter.Presenter@{Presenter.Presenter}!List@{List}}
+\index{List@{List}!Presenter.Presenter@{Presenter.Presenter}}
+\doxysubsubsection{List()}
+{\footnotesize\ttfamily string Presenter.\+Presenter.\+List (\begin{DoxyParamCaption}\item[{string}]{tip }\end{DoxyParamCaption})}
+
+
+
+Lista 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tip} & Tipul listei\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returneaza lista
+\end{DoxyReturn}
+
+
+Implements \textbf{ Commons.\+IPresenter} \doxyref{}{p.}{interface_commons_1_1_i_presenter}.
+
+\mbox{\label{class_presenter_1_1_presenter_a1c825fa749cc8033ba47e98510f6130f}} 
+\index{Presenter.Presenter@{Presenter.Presenter}!ProdusExists@{ProdusExists}}
+\index{ProdusExists@{ProdusExists}!Presenter.Presenter@{Presenter.Presenter}}
+\doxysubsubsection{ProdusExists()}
+{\footnotesize\ttfamily bool Presenter.\+Presenter.\+Produs\+Exists (\begin{DoxyParamCaption}\item[{string}]{tip,  }\item[{string}]{denumire }\end{DoxyParamCaption})}
+
+
+
+Existenta produs 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tip} & Tipul produsului existent\\
+\hline
+{\em denumire} & Denumirea produsului existent\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Produsul care exista deja
+\end{DoxyReturn}
+\mbox{\label{class_presenter_1_1_presenter_a920b0165ae50730bb6df740a0ffcfa5b}} 
+\index{Presenter.Presenter@{Presenter.Presenter}!RemoveProdus@{RemoveProdus}}
+\index{RemoveProdus@{RemoveProdus}!Presenter.Presenter@{Presenter.Presenter}}
+\doxysubsubsection{RemoveProdus()}
+{\footnotesize\ttfamily bool Presenter.\+Presenter.\+Remove\+Produs (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{string}]{tip }\end{DoxyParamCaption})}
+
+
+
+stergerea unui produs 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & ID-\/ul produsului\\
+\hline
+{\em tip} & Tipul produsului\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returneaza daca s-\/a realizat cu succes
+\end{DoxyReturn}
+
+
+Implements \textbf{ Commons.\+IPresenter} \doxyref{}{p.}{interface_commons_1_1_i_presenter}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+School/\+IP/\+Project/\+Pet\+Shop/solutie/\+Pet\+Shop/\+Presenter/Presenter.\+cs\end{DoxyCompactItemize}

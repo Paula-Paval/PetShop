@@ -1,0 +1,395 @@
+\doxysection{Model.\+Model Class Reference}
+\label{class_model_1_1_model}\index{Model.Model@{Model.Model}}
+
+
+Clasa model  
+
+
+Inheritance diagram for Model.\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_model_1_1_model}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ Add\+Animal} (\textbf{ Animal} produs)
+\begin{DoxyCompactList}\small\item\em Adaugare animal \end{DoxyCompactList}\item 
+void \textbf{ Add\+Obiecte\+Ingrijire} (\textbf{ Obiect\+Ingrijire} produs)
+\begin{DoxyCompactList}\small\item\em Adaugare obiecte de ingrijire \end{DoxyCompactList}\item 
+void \textbf{ Add\+Jucarii} (\textbf{ Jucarie} produs)
+\begin{DoxyCompactList}\small\item\em Adaugare jucarii \end{DoxyCompactList}\item 
+void \textbf{ Add\+Hrana} (\textbf{ Hrana} produs)
+\begin{DoxyCompactList}\small\item\em Adaugare hrana \end{DoxyCompactList}\item 
+void \textbf{ Initialize\+Data} ()
+\begin{DoxyCompactList}\small\item\em Initializare date \end{DoxyCompactList}\item 
+string \textbf{ List\+All} (string tip)
+\begin{DoxyCompactList}\small\item\em Lista \end{DoxyCompactList}\item 
+bool \textbf{ Delete\+Animal} (int id)
+\begin{DoxyCompactList}\small\item\em Stergerea unui animal \end{DoxyCompactList}\item 
+bool \textbf{ Delete\+Obiect\+Ingrijire} (int id)
+\begin{DoxyCompactList}\small\item\em Stergerea unui obiect de ingrijire \end{DoxyCompactList}\item 
+bool \textbf{ Delete\+Jucarii} (int id)
+\begin{DoxyCompactList}\small\item\em Stergerea unei jucarii \end{DoxyCompactList}\item 
+bool \textbf{ Delete\+Hrana} (int id)
+\begin{DoxyCompactList}\small\item\em Stergerea hranei \end{DoxyCompactList}\item 
+void \textbf{ Cumpara} (string tip, string denumire)
+\begin{DoxyCompactList}\small\item\em Cumpararea unui produs \end{DoxyCompactList}\item 
+bool \textbf{ Exists} (string tip, string denumire)
+\begin{DoxyCompactList}\small\item\em Existenta unui animal/ unui obiect de ingrijire/ hranei/ unei jucarii \end{DoxyCompactList}\item 
+void \textbf{ Set\+Animals} (List$<$ \textbf{ Animal} $>$ animals)
+\item 
+void \textbf{ Set\+Jucarii} (List$<$ \textbf{ Jucarie} $>$ jucarii)
+\item 
+void \textbf{ Set\+Obiecte\+Ingrijire} (List$<$ \textbf{ Obiect\+Ingrijire} $>$ obiect\+Ingrijire)
+\item 
+void \textbf{ Set\+Hrana} (List$<$ \textbf{ Hrana} $>$ hrana)
+\item 
+List$<$ \textbf{ Animal} $>$ \textbf{ Get\+Animals} ()
+\item 
+List$<$ \textbf{ Jucarie} $>$ \textbf{ Get\+Jucarii} ()
+\item 
+List$<$ \textbf{ Obiect\+Ingrijire} $>$ \textbf{ Get\+Obiecte\+Ingrijire} ()
+\item 
+List$<$ \textbf{ Hrana} $>$ \textbf{ Get\+Hrana} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clasa model 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{class_model_1_1_model_a4aeb3575589f7d2a756f8cd6309da188}} 
+\index{Model.Model@{Model.Model}!AddAnimal@{AddAnimal}}
+\index{AddAnimal@{AddAnimal}!Model.Model@{Model.Model}}
+\doxysubsubsection{AddAnimal()}
+{\footnotesize\ttfamily void Model.\+Model.\+Add\+Animal (\begin{DoxyParamCaption}\item[{\textbf{ Animal}}]{produs }\end{DoxyParamCaption})}
+
+
+
+Adaugare animal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em produs} & Obiect de tip Animal\\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ Commons.\+IModel} \doxyref{}{p.}{interface_commons_1_1_i_model}.
+
+\mbox{\label{class_model_1_1_model_aa97c11676cbaa8413351af31a4b5f106}} 
+\index{Model.Model@{Model.Model}!AddHrana@{AddHrana}}
+\index{AddHrana@{AddHrana}!Model.Model@{Model.Model}}
+\doxysubsubsection{AddHrana()}
+{\footnotesize\ttfamily void Model.\+Model.\+Add\+Hrana (\begin{DoxyParamCaption}\item[{\textbf{ Hrana}}]{produs }\end{DoxyParamCaption})}
+
+
+
+Adaugare hrana 
+
+
+\begin{DoxyParams}{Parameters}
+{\em produs} & Obiect de tip Hrana\\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ Commons.\+IModel} \doxyref{}{p.}{interface_commons_1_1_i_model}.
+
+\mbox{\label{class_model_1_1_model_a3e2cfada10888335e6c312c37b0d38f7}} 
+\index{Model.Model@{Model.Model}!AddJucarii@{AddJucarii}}
+\index{AddJucarii@{AddJucarii}!Model.Model@{Model.Model}}
+\doxysubsubsection{AddJucarii()}
+{\footnotesize\ttfamily void Model.\+Model.\+Add\+Jucarii (\begin{DoxyParamCaption}\item[{\textbf{ Jucarie}}]{produs }\end{DoxyParamCaption})}
+
+
+
+Adaugare jucarii 
+
+/// 
+\begin{DoxyParams}{Parameters}
+{\em produs} & Obiect de tip Jucarie\\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ Commons.\+IModel} \doxyref{}{p.}{interface_commons_1_1_i_model}.
+
+\mbox{\label{class_model_1_1_model_ad2c6ca8e55ace4f0ffb3b4e87ee9c8eb}} 
+\index{Model.Model@{Model.Model}!AddObiecteIngrijire@{AddObiecteIngrijire}}
+\index{AddObiecteIngrijire@{AddObiecteIngrijire}!Model.Model@{Model.Model}}
+\doxysubsubsection{AddObiecteIngrijire()}
+{\footnotesize\ttfamily void Model.\+Model.\+Add\+Obiecte\+Ingrijire (\begin{DoxyParamCaption}\item[{\textbf{ Obiect\+Ingrijire}}]{produs }\end{DoxyParamCaption})}
+
+
+
+Adaugare obiecte de ingrijire 
+
+
+\begin{DoxyParams}{Parameters}
+{\em produs} & Obiect de tip Obiect\+Ingrijire\\
+\hline
+\end{DoxyParams}
+
+
+Implements \textbf{ Commons.\+IModel} \doxyref{}{p.}{interface_commons_1_1_i_model}.
+
+\mbox{\label{class_model_1_1_model_a8a35fcf74c6d0e2d58e1f48775051003}} 
+\index{Model.Model@{Model.Model}!Cumpara@{Cumpara}}
+\index{Cumpara@{Cumpara}!Model.Model@{Model.Model}}
+\doxysubsubsection{Cumpara()}
+{\footnotesize\ttfamily void Model.\+Model.\+Cumpara (\begin{DoxyParamCaption}\item[{string}]{tip,  }\item[{string}]{denumire }\end{DoxyParamCaption})}
+
+
+
+Cumpararea unui produs 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tip} & Tipul unui produs cumparat\\
+\hline
+{\em denumire} & Denumirea unui produs cumparat\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returneaza daca s-\/a realizat cu succes
+\end{DoxyReturn}
+
+
+Implements \textbf{ Commons.\+IModel} \doxyref{}{p.}{interface_commons_1_1_i_model}.
+
+\mbox{\label{class_model_1_1_model_afb6058e27c30d0044ae4f4a8693b323b}} 
+\index{Model.Model@{Model.Model}!DeleteAnimal@{DeleteAnimal}}
+\index{DeleteAnimal@{DeleteAnimal}!Model.Model@{Model.Model}}
+\doxysubsubsection{DeleteAnimal()}
+{\footnotesize\ttfamily bool Model.\+Model.\+Delete\+Animal (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Stergerea unui animal 
+
+/// 
+\begin{DoxyParams}{Parameters}
+{\em id} & ID-\/ul animalului\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returneaza daca s-\/a realizat cu succes
+\end{DoxyReturn}
+
+
+Implements \textbf{ Commons.\+IModel} \doxyref{}{p.}{interface_commons_1_1_i_model}.
+
+\mbox{\label{class_model_1_1_model_a9dc1e09fd1f51dd98bae24ca9c467506}} 
+\index{Model.Model@{Model.Model}!DeleteHrana@{DeleteHrana}}
+\index{DeleteHrana@{DeleteHrana}!Model.Model@{Model.Model}}
+\doxysubsubsection{DeleteHrana()}
+{\footnotesize\ttfamily bool Model.\+Model.\+Delete\+Hrana (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Stergerea hranei 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & ID-\/ul hranei\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returneaza daca s-\/a realizat cu succes
+\end{DoxyReturn}
+
+
+Implements \textbf{ Commons.\+IModel} \doxyref{}{p.}{interface_commons_1_1_i_model}.
+
+\mbox{\label{class_model_1_1_model_a4d745e78cea4c0a24689253a684a2419}} 
+\index{Model.Model@{Model.Model}!DeleteJucarii@{DeleteJucarii}}
+\index{DeleteJucarii@{DeleteJucarii}!Model.Model@{Model.Model}}
+\doxysubsubsection{DeleteJucarii()}
+{\footnotesize\ttfamily bool Model.\+Model.\+Delete\+Jucarii (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Stergerea unei jucarii 
+
+/// 
+\begin{DoxyParams}{Parameters}
+{\em id} & ID-\/ul jucariei\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returneaza daca s-\/a realizat cu succes
+\end{DoxyReturn}
+
+
+Implements \textbf{ Commons.\+IModel} \doxyref{}{p.}{interface_commons_1_1_i_model}.
+
+\mbox{\label{class_model_1_1_model_a0d0137c8eea64c2573735ba84f4eabcf}} 
+\index{Model.Model@{Model.Model}!DeleteObiectIngrijire@{DeleteObiectIngrijire}}
+\index{DeleteObiectIngrijire@{DeleteObiectIngrijire}!Model.Model@{Model.Model}}
+\doxysubsubsection{DeleteObiectIngrijire()}
+{\footnotesize\ttfamily bool Model.\+Model.\+Delete\+Obiect\+Ingrijire (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Stergerea unui obiect de ingrijire 
+
+/// 
+\begin{DoxyParams}{Parameters}
+{\em id} & ID-\/ul obiectului de ingrijire\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returneaza daca s-\/a realizat cu succes
+\end{DoxyReturn}
+
+
+Implements \textbf{ Commons.\+IModel} \doxyref{}{p.}{interface_commons_1_1_i_model}.
+
+\mbox{\label{class_model_1_1_model_acd43ddc18b9f29763ca06f3fb6e58e06}} 
+\index{Model.Model@{Model.Model}!Exists@{Exists}}
+\index{Exists@{Exists}!Model.Model@{Model.Model}}
+\doxysubsubsection{Exists()}
+{\footnotesize\ttfamily bool Model.\+Model.\+Exists (\begin{DoxyParamCaption}\item[{string}]{tip,  }\item[{string}]{denumire }\end{DoxyParamCaption})}
+
+
+
+Existenta unui animal/ unui obiect de ingrijire/ hranei/ unei jucarii 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tip} & Tipul unui produs existent\\
+\hline
+{\em denumire} & Denumirea unui produs existent\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returneaza daca exista
+\end{DoxyReturn}
+
+
+Implements \textbf{ Commons.\+IModel} \doxyref{}{p.}{interface_commons_1_1_i_model}.
+
+\mbox{\label{class_model_1_1_model_a4996065192df3d6c69a12ebabb5f1b07}} 
+\index{Model.Model@{Model.Model}!GetAnimals@{GetAnimals}}
+\index{GetAnimals@{GetAnimals}!Model.Model@{Model.Model}}
+\doxysubsubsection{GetAnimals()}
+{\footnotesize\ttfamily List$<$ \textbf{ Animal} $>$ Model.\+Model.\+Get\+Animals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \textbf{ Commons.\+IModel} \doxyref{}{p.}{interface_commons_1_1_i_model}.
+
+\mbox{\label{class_model_1_1_model_adfef30b4f6cb98f039ab735d7285e1da}} 
+\index{Model.Model@{Model.Model}!GetHrana@{GetHrana}}
+\index{GetHrana@{GetHrana}!Model.Model@{Model.Model}}
+\doxysubsubsection{GetHrana()}
+{\footnotesize\ttfamily List$<$ \textbf{ Hrana} $>$ Model.\+Model.\+Get\+Hrana (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \textbf{ Commons.\+IModel} \doxyref{}{p.}{interface_commons_1_1_i_model}.
+
+\mbox{\label{class_model_1_1_model_a586775181a668cab79b9ad04e2de845a}} 
+\index{Model.Model@{Model.Model}!GetJucarii@{GetJucarii}}
+\index{GetJucarii@{GetJucarii}!Model.Model@{Model.Model}}
+\doxysubsubsection{GetJucarii()}
+{\footnotesize\ttfamily List$<$ \textbf{ Jucarie} $>$ Model.\+Model.\+Get\+Jucarii (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \textbf{ Commons.\+IModel} \doxyref{}{p.}{interface_commons_1_1_i_model}.
+
+\mbox{\label{class_model_1_1_model_a605fe0de4085a030ea56cca62877aacf}} 
+\index{Model.Model@{Model.Model}!GetObiecteIngrijire@{GetObiecteIngrijire}}
+\index{GetObiecteIngrijire@{GetObiecteIngrijire}!Model.Model@{Model.Model}}
+\doxysubsubsection{GetObiecteIngrijire()}
+{\footnotesize\ttfamily List$<$ \textbf{ Obiect\+Ingrijire} $>$ Model.\+Model.\+Get\+Obiecte\+Ingrijire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \textbf{ Commons.\+IModel} \doxyref{}{p.}{interface_commons_1_1_i_model}.
+
+\mbox{\label{class_model_1_1_model_a5e6b14d862364994af88f2789998e3ff}} 
+\index{Model.Model@{Model.Model}!InitializeData@{InitializeData}}
+\index{InitializeData@{InitializeData}!Model.Model@{Model.Model}}
+\doxysubsubsection{InitializeData()}
+{\footnotesize\ttfamily void Model.\+Model.\+Initialize\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializare date 
+
+
+
+Implements \textbf{ Commons.\+IModel} \doxyref{}{p.}{interface_commons_1_1_i_model}.
+
+\mbox{\label{class_model_1_1_model_a591071f0d7edd6e44e1d0b48b5eedd85}} 
+\index{Model.Model@{Model.Model}!ListAll@{ListAll}}
+\index{ListAll@{ListAll}!Model.Model@{Model.Model}}
+\doxysubsubsection{ListAll()}
+{\footnotesize\ttfamily string Model.\+Model.\+List\+All (\begin{DoxyParamCaption}\item[{string}]{tip }\end{DoxyParamCaption})}
+
+
+
+Lista 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tip} & Tipul listei\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retuneaza conversia listei la tipul de date string
+\end{DoxyReturn}
+
+
+Implements \textbf{ Commons.\+IModel} \doxyref{}{p.}{interface_commons_1_1_i_model}.
+
+\mbox{\label{class_model_1_1_model_a6f7379b4477f14181dbc3ae384495182}} 
+\index{Model.Model@{Model.Model}!SetAnimals@{SetAnimals}}
+\index{SetAnimals@{SetAnimals}!Model.Model@{Model.Model}}
+\doxysubsubsection{SetAnimals()}
+{\footnotesize\ttfamily void Model.\+Model.\+Set\+Animals (\begin{DoxyParamCaption}\item[{List$<$ \textbf{ Animal} $>$}]{animals }\end{DoxyParamCaption})}
+
+
+
+Implements \textbf{ Commons.\+IModel} \doxyref{}{p.}{interface_commons_1_1_i_model}.
+
+\mbox{\label{class_model_1_1_model_a929f461e6f458e31a68a9f40263ee1ad}} 
+\index{Model.Model@{Model.Model}!SetHrana@{SetHrana}}
+\index{SetHrana@{SetHrana}!Model.Model@{Model.Model}}
+\doxysubsubsection{SetHrana()}
+{\footnotesize\ttfamily void Model.\+Model.\+Set\+Hrana (\begin{DoxyParamCaption}\item[{List$<$ \textbf{ Hrana} $>$}]{hrana }\end{DoxyParamCaption})}
+
+
+
+Implements \textbf{ Commons.\+IModel} \doxyref{}{p.}{interface_commons_1_1_i_model}.
+
+\mbox{\label{class_model_1_1_model_ae6460e0f93c229c76abc25d057410d68}} 
+\index{Model.Model@{Model.Model}!SetJucarii@{SetJucarii}}
+\index{SetJucarii@{SetJucarii}!Model.Model@{Model.Model}}
+\doxysubsubsection{SetJucarii()}
+{\footnotesize\ttfamily void Model.\+Model.\+Set\+Jucarii (\begin{DoxyParamCaption}\item[{List$<$ \textbf{ Jucarie} $>$}]{jucarii }\end{DoxyParamCaption})}
+
+
+
+Implements \textbf{ Commons.\+IModel} \doxyref{}{p.}{interface_commons_1_1_i_model}.
+
+\mbox{\label{class_model_1_1_model_ab9ae607b704e10c111552fe8bfec2567}} 
+\index{Model.Model@{Model.Model}!SetObiecteIngrijire@{SetObiecteIngrijire}}
+\index{SetObiecteIngrijire@{SetObiecteIngrijire}!Model.Model@{Model.Model}}
+\doxysubsubsection{SetObiecteIngrijire()}
+{\footnotesize\ttfamily void Model.\+Model.\+Set\+Obiecte\+Ingrijire (\begin{DoxyParamCaption}\item[{List$<$ \textbf{ Obiect\+Ingrijire} $>$}]{obiect\+Ingrijire }\end{DoxyParamCaption})}
+
+
+
+Implements \textbf{ Commons.\+IModel} \doxyref{}{p.}{interface_commons_1_1_i_model}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+School/\+IP/\+Project/\+Pet\+Shop/solutie/\+Pet\+Shop/\+Model/Model.\+cs\end{DoxyCompactItemize}
