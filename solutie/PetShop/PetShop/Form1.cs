@@ -534,5 +534,15 @@ namespace PetShop
         {
             MessageBox.Show("Proiect IP: PetShop \nRealizat de: \n \t *Bursuc Stefana \n \t *Chihaia Georgiana \n \t *Paula Paval \n \t *Timofte Constantin-Bogdan \n Grupa: 1309B");
         }
+
+        private void buttonHelpProgramator_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, " /Doxy/html/PetShop.chm");
+        }
+
+        private void buttonHelpUtilizator_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, " Doxy\\html\\PetShop.chm");
+        }
     }
 }

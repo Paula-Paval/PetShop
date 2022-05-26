@@ -74,9 +74,9 @@ namespace PetShop
             this.textBoxIdDeSters = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonHelpProgramator = new System.Windows.Forms.Button();
             this.buttonAbout = new System.Windows.Forms.Button();
             this.buttonHelpUtilizator = new System.Windows.Forms.Button();
-            this.buttonHelpProgramator = new System.Windows.Forms.Button();
             this.groupBoxAdaugare.SuspendLayout();
             this.groupBoxJucarii.SuspendLayout();
             this.groupBoxHrana.SuspendLayout();
@@ -238,7 +238,6 @@ namespace PetShop
             this.labelDenumireObiectDeIngrijire.Size = new System.Drawing.Size(69, 17);
             this.labelDenumireObiectDeIngrijire.TabIndex = 3;
             this.labelDenumireObiectDeIngrijire.Text = "Denumire";
-           
             // 
             // labelCategorieObiectDeIngrijire
             // 
@@ -255,7 +254,6 @@ namespace PetShop
             this.textBoxDenumireObiect.Name = "textBoxDenumireObiect";
             this.textBoxDenumireObiect.Size = new System.Drawing.Size(135, 22);
             this.textBoxDenumireObiect.TabIndex = 1;
-          
             // 
             // comboBoxCategorieIngrijire
             // 
@@ -310,7 +308,6 @@ namespace PetShop
             this.comboBoxSpecie.Name = "comboBoxSpecie";
             this.comboBoxSpecie.Size = new System.Drawing.Size(124, 24);
             this.comboBoxSpecie.TabIndex = 8;
-           
             // 
             // labelPret
             // 
@@ -338,7 +335,6 @@ namespace PetShop
             this.labelTip.Size = new System.Drawing.Size(28, 17);
             this.labelTip.TabIndex = 3;
             this.labelTip.Text = "Tip";
-            
             // 
             // comboBoxCategorii
             // 
@@ -521,6 +517,16 @@ namespace PetShop
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             // 
+            // buttonHelpProgramator
+            // 
+            this.buttonHelpProgramator.Location = new System.Drawing.Point(14, 69);
+            this.buttonHelpProgramator.Name = "buttonHelpProgramator";
+            this.buttonHelpProgramator.Size = new System.Drawing.Size(146, 50);
+            this.buttonHelpProgramator.TabIndex = 7;
+            this.buttonHelpProgramator.Text = "Help programator";
+            this.buttonHelpProgramator.UseVisualStyleBackColor = true;
+            this.buttonHelpProgramator.Click += new System.EventHandler(this.buttonHelpProgramator_Click);
+            // 
             // buttonAbout
             // 
             this.buttonAbout.Location = new System.Drawing.Point(14, 126);
@@ -539,15 +545,7 @@ namespace PetShop
             this.buttonHelpUtilizator.TabIndex = 5;
             this.buttonHelpUtilizator.Text = "Help utilizator";
             this.buttonHelpUtilizator.UseVisualStyleBackColor = true;
-            // 
-            // buttonHelpProgramator
-            // 
-            this.buttonHelpProgramator.Location = new System.Drawing.Point(14, 69);
-            this.buttonHelpProgramator.Name = "buttonHelpProgramator";
-            this.buttonHelpProgramator.Size = new System.Drawing.Size(146, 50);
-            this.buttonHelpProgramator.TabIndex = 7;
-            this.buttonHelpProgramator.Text = "Help programator";
-            this.buttonHelpProgramator.UseVisualStyleBackColor = true;
+            this.buttonHelpUtilizator.Click += new System.EventHandler(this.buttonHelpUtilizator_Click);
             // 
             // FormPetShop
             // 
