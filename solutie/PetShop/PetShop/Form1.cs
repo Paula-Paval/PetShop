@@ -537,12 +537,12 @@ namespace PetShop
 
         private void buttonHelpProgramator_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, " /Doxy/html/PetShop.chm");
+            Help.ShowHelp(this, " Doxy\\html\\PetShop.chm");
         }
 
         private void buttonHelpUtilizator_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, " Doxy\\html\\PetShop.chm");
+            Help.ShowHelp(this, "PetShopUtilizator.chm");
         }
     }
 }
