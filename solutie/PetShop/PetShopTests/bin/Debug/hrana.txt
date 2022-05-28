@@ -1,2 +1,0 @@
-1,2,hranaUmedaCaini,flex
-1,105,hranaUmedaCaini,Wiskas
