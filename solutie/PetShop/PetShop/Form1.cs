@@ -142,6 +142,7 @@ namespace PetShop
                     Meniu.UserMenu(out _menuOptions);
                     break;
                 case "Administrator":
+                    richTextBoxAfisare.Clear();
                     Meniu.AdminMenu(out _menuOptions);
                     break;
                 case "Iesire":
