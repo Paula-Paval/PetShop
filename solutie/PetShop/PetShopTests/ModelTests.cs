@@ -163,12 +163,12 @@ namespace PetShopTests
         [ExpectedException(typeof(IdNegativExcetion))]
         public void AddObiecteIngrijire_Should_Throw_IdNegativExcetion()
         {
-            var animal = new Animal
+            var obiectingrijire = new ObiectIngrijire
             {
                 Id = -2
             };
 
-            _model.AddAnimal(animal);
+            _model.AddObiecteIngrijire(obiectingrijire);
 
         }
 
@@ -179,13 +179,13 @@ namespace PetShopTests
         [ExpectedException(typeof(PretNegativException))]
         public void AddObiecteIngrijire_Should_Throw_PretNegativException()
         {
-            var animal = new Animal
+            var obiectingrijire = new ObiectIngrijire
             {
                 Id = 1,
                 Pret = -1
             };
 
-            _model.AddAnimal(animal);
+            _model.AddObiecteIngrijire(obiectingrijire);
 
         }
         /// <summary>
@@ -195,18 +195,18 @@ namespace PetShopTests
         [TestMethod]
         public void AddObiecteIngrijire_Success()
         {
-            var animal = new Animal
+            var obiectingrijire = new ObiectIngrijire
             {
                 Id = 1,
                 Pret = 20,
-                Categorie = "caine"
+                Categorie = "perie"
             };
 
-            _model.AddAnimal(animal);
+            _model.AddObiecteIngrijire(obiectingrijire);
 
-            var animalDinLista = _model.GetAnimals().FirstOrDefault(x => x.Id == animal.Id);
+            var obiectDinLista = _model.GetObiecteIngrijire().FirstOrDefault(x => x.Id == obiectingrijire.Id);
 
-            Assert.IsNotNull(animalDinLista);
+            Assert.IsNotNull(obiectDinLista);
         }
         /// <summary>
         /// Metoda de testare DeleteObiectIngrijire_Should_Throw_IdNegativExcetion
@@ -218,7 +218,7 @@ namespace PetShopTests
         {
             var id = -3;
 
-            _model.DeleteAnimal(id);
+            _model.DeleteObiectIngrijire(id);
 
         }
 
@@ -230,7 +230,7 @@ namespace PetShopTests
         {
             var id = 3;
 
-            var result = _model.DeleteAnimal(id);
+            var result = _model.DeleteObiectIngrijire(id);
 
             Assert.IsFalse(result);
         }
@@ -240,16 +240,16 @@ namespace PetShopTests
         [TestMethod]
         public void DeleteObiectIngrijire_Should_Return_True()
         {
-            var animal = new Animal
+            var obiectingrijire = new ObiectIngrijire
             {
                 Id = 1,
                 Pret = 20,
-                Categorie = "caine"
+                Categorie = "perie"
             };
-            _model.SetAnimals(new List<Animal>() { animal });
+            _model.SetObiecteIngrijire(new List<ObiectIngrijire>() { obiectingrijire });
             var id = 1;
 
-            var result = _model.DeleteAnimal(id);
+            var result = _model.DeleteObiectIngrijire(id);
 
             Assert.IsTrue(result);
         }
@@ -261,12 +261,12 @@ namespace PetShopTests
         [ExpectedException(typeof(IdNegativExcetion))]
         public void AddJucarii_Should_Throw_IdNegativExcetion()
         {
-            var animal = new Animal
+            var jucarie = new Jucarie
             {
                 Id = -2
             };
 
-            _model.AddAnimal(animal);
+            _model.AddJucarii(jucarie);
 
         }
 
@@ -277,13 +277,13 @@ namespace PetShopTests
         [ExpectedException(typeof(PretNegativException))]
         public void AddJucarii_Should_Throw_PretNegativException()
         {
-            var animal = new Animal
+            var jucarie = new Jucarie
             {
                 Id = 1,
                 Pret = -1
             };
 
-            _model.AddAnimal(animal);
+            _model.AddJucarii(jucarie);
 
         }
 
@@ -293,17 +293,16 @@ namespace PetShopTests
         [TestMethod]
         public void AddJucarii_Success()
         {
-            var animal = new Animal
+            var jucarie = new Jucarie
             {
                 Id = 1,
-                Categorie = "caine"
             };
 
-            _model.AddAnimal(animal);
+            _model.AddJucarii(jucarie);
 
-            var animalDinLista = _model.GetAnimals().FirstOrDefault(x => x.Id == animal.Id);
+            var jucarieDinLista = _model.GetJucarii().FirstOrDefault(x => x.Id == jucarie.Id);
 
-            Assert.IsNotNull(animalDinLista);
+            Assert.IsNotNull(jucarieDinLista);
         }
 
 
@@ -316,7 +315,7 @@ namespace PetShopTests
         {
             var id = -3;
 
-            _model.DeleteAnimal(id);
+            _model.DeleteJucarii(id);
 
         }
         /// <summary>
@@ -328,7 +327,7 @@ namespace PetShopTests
         {
             var id = 3;
 
-            var result = _model.DeleteAnimal(id);
+            var result = _model.DeleteJucarii(id);
 
             Assert.IsFalse(result);
         }
@@ -339,16 +338,15 @@ namespace PetShopTests
         [TestMethod]
         public void DeleteJucarii_Should_Return_True()
         {
-            var animal = new Animal
+            var jucarie = new Jucarie
             {
                 Id = 1,
                 Pret = 20,
-                Categorie = "caine"
             };
-            _model.SetAnimals(new List<Animal>() { animal });
+            _model.SetJucarii(new List<Jucarie>() { jucarie });
             var id = 1;
 
-            var result = _model.DeleteAnimal(id);
+            var result = _model.DeleteJucarii(id);
 
             Assert.IsTrue(result);
         }
@@ -361,12 +359,12 @@ namespace PetShopTests
         [ExpectedException(typeof(IdNegativExcetion))]
         public void AddHrana_Should_Throw_IdNegativExcetion()
         {
-            var animal = new Animal
+            var hrana = new Hrana
             {
                 Id = -2
             };
 
-            _model.AddAnimal(animal);
+            _model.AddHrana(hrana);
 
         }
 
@@ -377,13 +375,13 @@ namespace PetShopTests
         [ExpectedException(typeof(PretNegativException))]
         public void AddHrana_Should_Throw_PretNegativException()
         {
-            var animal = new Animal
+            var hrana = new Hrana
             {
                 Id = 1,
                 Pret = -1,
             };
 
-            _model.AddAnimal(animal);
+            _model.AddHrana(hrana);
 
         }
 
@@ -394,18 +392,18 @@ namespace PetShopTests
         [TestMethod]
         public void AddHrana_Success()
         {
-            var animal = new Animal
+            var hrana = new Hrana
             {
                 Id = 1,
                 Pret = 20,
-                Categorie = "caine"
+                Categorie = "hranaUmedaCaini"
             };
 
-            _model.AddAnimal(animal);
+            _model.AddHrana(hrana);
 
-            var animalDinLista = _model.GetAnimals().FirstOrDefault(x => x.Id == animal.Id);
+            var hranaDinLista = _model.GetHrana().FirstOrDefault(x => x.Id == hrana.Id);
 
-            Assert.IsNotNull(animalDinLista);
+            Assert.IsNotNull(hranaDinLista);
         }
 
         /// <summary>
@@ -417,7 +415,7 @@ namespace PetShopTests
         {
             var id = -3;
 
-            _model.DeleteAnimal(id);
+            _model.DeleteHrana(id);
 
         }
 
@@ -429,7 +427,7 @@ namespace PetShopTests
         {
             var id = 3;
 
-            var result = _model.DeleteAnimal(id);
+            var result = _model.DeleteHrana(id);
 
             Assert.IsFalse(result);
         }
@@ -440,16 +438,16 @@ namespace PetShopTests
         [TestMethod]
         public void DeleteHrana_Should_Return_True()
         {
-            var animal = new Animal
+            var hrana = new Hrana
             {
                 Id = 1,
                 Pret = 20,
-                Categorie = "caine"
+                Categorie = "hranaUmedaCaini"
             };
-            _model.SetAnimals(new List<Animal>() { animal });
+            _model.SetHrana(new List<Hrana>() { hrana });
             var id = 1;
 
-            var result = _model.DeleteAnimal(id);
+            var result = _model.DeleteHrana(id);
 
             Assert.IsTrue(result);
         }
