@@ -533,7 +533,7 @@ namespace PetShop
         /// <param name="e">Parametru de tip EventArgs</param>
         private void buttonAbout_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Proiect IP: PetShop \nRealizat de: \n \t *Bursuc Stefana \n \t *Chihaia Georgiana \n \t *Paula Paval \n \t *Timofte Constantin-Bogdan \n Grupa: 1309B");
+            MessageBox.Show("Proiect IP: PetShop \nRealizat de: \n \t *Bursuc Stefana \n \t *Chihaia Georgiana \n \t *Paval Paula \n \t *Timofte Constantin-Bogdan \n Grupa: 1309B");
         }
 
         private void buttonHelpProgramator_Click(object sender, EventArgs e)
