@@ -181,15 +181,23 @@ namespace PetShop
                     groupBoxAdaugare.Enabled = false;
                     break;
                 case "Afisarea tuturor animalelor":
+                    groupBoxStergere.Enabled = false;
+                    groupBoxAdaugare.Enabled = false;
                     richTextBoxAfisare.Text = _presenter.List(Constante.Animal);
                     break;
                 case "Afisarea tuturor jucariilor":
+                    groupBoxStergere.Enabled = false;
+                    groupBoxAdaugare.Enabled = false;
                     richTextBoxAfisare.Text = _presenter.List(Constante.Jucarie);
                     break;
                 case "Afisarea tuturor obiectlor de ingrijire ":
+                    groupBoxStergere.Enabled = false;
+                    groupBoxAdaugare.Enabled = false;
                     richTextBoxAfisare.Text = _presenter.List(Constante.ObiectDeIngrijire);
                     break;
                 case "Afisarea hranei ":
+                    groupBoxStergere.Enabled = false;
+                    groupBoxAdaugare.Enabled = false;
                     richTextBoxAfisare.Text = _presenter.List(Constante.Hrana);
                     break;
                 case "Cumparare":
