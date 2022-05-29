@@ -139,9 +139,12 @@ namespace PetShop
             switch (listBoxMenu.SelectedItem.ToString())
             {
                 case "Utilizator":
+                    groupBoxStergere.Enabled = false;
+                    groupBoxAdaugare.Enabled = false;
                     Meniu.UserMenu(out _menuOptions);
                     break;
                 case "Administrator":
+                    groupBoxUser.Enabled = false;
                     richTextBoxAfisare.Clear();
                     Meniu.AdminMenu(out _menuOptions);
                     break;
@@ -178,7 +181,7 @@ namespace PetShop
                 case "Stegerea unui produs":
                     groupBoxStergere.Enabled = true;
                     groupBoxUser.Enabled = false;
-                    groupBoxAdaugare.Enabled = false;
+                    groupBoxAdaugare.Enabled = false;                    
                     break;
                 case "Afisarea tuturor animalelor":
                     groupBoxStergere.Enabled = false;
